@@ -1,0 +1,34 @@
+{
+ "written_utc": "2026-10-29 21:21:44",
+ "session": "Batch",
+ "profile": "paper",
+ "backend": "torch/cuda",
+ "method": "CDQ-lit",
+ "shrink_ablation": "CDQ",
+ "rounds": 60,
+ "weight_every": 5,
+ "seeds": 10,
+ "scales": [
+  "small",
+  "medium",
+  "large"
+ ],
+ "alphas": [
+  100,
+  50,
+  25
+ ],
+ "channels": [
+  "good",
+  "moderate",
+  "poor"
+ ],
+ "rows_done": 13950,
+ "rows_total": 13950,
+ "mid_run_checkpoints": [],
+ "results_csv": "results_cdqfed_paper_torchcuda.csv",
+ "shard_dir": "shards_paper_torchcuda",
+ "n_state_files": 22,
+ "state_bytes": 143722429,
+ "note": "Stage 0b of the next session restores from the folder that holds this file."
+}

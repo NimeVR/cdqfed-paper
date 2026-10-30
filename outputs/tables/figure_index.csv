@@ -1,0 +1,79 @@
+no,file,caption
+1,04_accuracy_curves_alpha100.png / .pdf,"Test accuracy versus federated round, per scale, arm and variant (alpha=100)"
+2,04_accuracy_curves_alpha25.png / .pdf,"Test accuracy versus federated round, per scale, arm and variant (alpha=25)"
+3,04_accuracy_curves_alpha50.png / .pdf,"Test accuracy versus federated round, per scale, arm and variant (alpha=50)"
+4,04b_drift_curves_alpha100.png / .pdf,Client drift E_drift versus round (alpha=100)
+5,04b_drift_curves_alpha25.png / .pdf,Client drift E_drift versus round (alpha=25)
+6,04b_drift_curves_alpha50.png / .pdf,Client drift E_drift versus round (alpha=50)
+7,20_00_metric_acc_tail.png / .pdf,"Final accuracy per scale, arm and variant"
+8,20_02_metric_drift.png / .pdf,"Client drift E_drift per scale, arm and variant"
+9,20_04_metric_scda.png / .pdf,"Drift alignment S_CDA per scale, arm and variant"
+10,06_forest_accuracy.png / .pdf,Paired effect on accuracy of CD-QFed against each baseline (95% intervals)
+11,06_forest_client-drift.png / .pdf,Paired effect on client drift of CD-QFed against each baseline
+12,06_forest_drift.png / .pdf,Paired effect on drift alignment S_CDA
+13,06c_forest_channel_accuracy.png / .pdf,"Paired effect on accuracy, split by channel quality"
+14,06b_forest_arm_accuracy.png / .pdf,"Paired effect on accuracy, split by experimental arm"
+15,08_ablation_lit.png / .pdf,Per-innovation ablation anchored on CD-QFed
+16,11_shrinkage_ablation.png / .pdf,Gauss-Markov orphan-shrinkage ablation
+17,12_trend_acc_tail_by_channel.png / .pdf,Accuracy versus channel quality
+18,12b_trend_acc_tail_by_alpha.png / .pdf,Accuracy versus data heterogeneity alpha
+19,12_trend_drift_by_channel.png / .pdf,Client drift versus channel quality
+20,09_heatmap_acc_tail_vs_base.png / .pdf,"Accuracy gain over the baseline, per scale x arm x channel x alpha"
+21,33_weight_matrix_runs.png / .pdf,Effective aggregation weight per client and round (showcase runs)
+22,34_drift_memory_matrix.png / .pdf,Fed-QDrift memory per client (showcase runs)
+23,00_acceptance_gates.png / .pdf,Acceptance gates 1-9
+24,13_power.png / .pdf,Statistical power: observed effect against the number of pairs
+25,15_seed_spread_acc_tail.png / .pdf,Accuracy spread across seeds
+26,16_paired_diff_acc_tail.png / .pdf,Distribution of paired accuracy differences
+27,14_drift_vs_accuracy.png / .pdf,Client drift against accuracy
+,06b_forest_arm_client-drift.png / .pdf,supplementary
+,06b_forest_arm_drift.png / .pdf,supplementary
+,06c_forest_channel_client-drift.png / .pdf,supplementary
+,06c_forest_channel_drift.png / .pdf,supplementary
+,07_client_drift.png / .pdf,supplementary
+,08b_ablation_cdq.png / .pdf,supplementary
+,09_heatmap_drift_vs_base.png / .pdf,supplementary
+,09_heatmap_scda_vs_base.png / .pdf,supplementary
+,09b_heatmap_acc_tail_vs_JEQFL.png / .pdf,supplementary
+,09b_heatmap_drift_vs_JEQFL.png / .pdf,supplementary
+,09b_heatmap_scda_vs_JEQFL.png / .pdf,supplementary
+,12_trend_active_mean_by_channel.png / .pdf,supplementary
+,12_trend_rec_err_by_channel.png / .pdf,supplementary
+,12_trend_scda_by_channel.png / .pdf,supplementary
+,12b_trend_active_mean_by_alpha.png / .pdf,supplementary
+,12b_trend_drift_by_alpha.png / .pdf,supplementary
+,12b_trend_rec_err_by_alpha.png / .pdf,supplementary
+,12b_trend_scda_by_alpha.png / .pdf,supplementary
+,15_seed_spread_drift.png / .pdf,supplementary
+,15_seed_spread_scda.png / .pdf,supplementary
+,16_paired_diff_drift.png / .pdf,supplementary
+,16_paired_diff_scda.png / .pdf,supplementary
+,20_01_metric_acc_final.png / .pdf,supplementary
+,20_03_metric_drift_tail.png / .pdf,supplementary
+,20_05_metric_rec_err.png / .pdf,supplementary
+,20_06_metric_att_ratio.png / .pdf,supplementary
+,20_07_metric_bad_share.png / .pdf,supplementary
+,20_08_metric_active_mean.png / .pdf,supplementary
+,20_09_metric_mismatch.png / .pdf,supplementary
+,20_10_metric_gamma_orph.png / .pdf,supplementary
+,20_11_metric_eps_mean.png / .pdf,supplementary
+,20_12_metric_eps_bad.png / .pdf,supplementary
+,30_00_weights_w_static.png / .pdf,supplementary
+,30_01_weights_w_eff_mean.png / .pdf,supplementary
+,30_02_weights_w_eff_early.png / .pdf,supplementary
+,30_03_weights_w_eff_late.png / .pdf,supplementary
+,30_04_weights_w_innov_mean.png / .pdf,supplementary
+,30_05_weights_p_dec_mean.png / .pdf,supplementary
+,30_06_weights_eps_client.png / .pdf,supplementary
+,30_07_weights_signal_client.png / .pdf,supplementary
+,30_08_weights_kappa_client.png / .pdf,supplementary
+,30_09_weights_sig2_dec_client.png / .pdf,supplementary
+,30_10_weights_mem_norm.png / .pdf,supplementary
+,31_weight_tier_share.png / .pdf,supplementary
+,32_theta_matrix.png / .pdf,supplementary
+,35_epoch_weights_large.png / .pdf,supplementary
+,35_epoch_weights_medium.png / .pdf,supplementary
+,35_epoch_weights_small.png / .pdf,supplementary
+,36_epoch_tier_share_large.png / .pdf,supplementary
+,36_epoch_tier_share_medium.png / .pdf,supplementary
+,36_epoch_tier_share_small.png / .pdf,supplementary

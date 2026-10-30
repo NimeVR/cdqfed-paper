@@ -1,0 +1,144 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Paired comparison by experimental arm.}\label{tab:table8_paired_by_arm}
+\begin{tabular}{llllllllllllll}
+\toprule
+scale & arm & baseline & metric & n\_pairs & mean\_method & mean\_baseline & gap & rel\_change\_pct & p & p\_wilcoxon & q\_BH & n\_80pow & verdict \\
+\midrule
+large & A0\_A3 & base & accuracy & 90 & 0.3761 & 0.3644 & 0.01169 & 3.208 & 0.06294 & 0.0416 & 0.1888 & 200 & good trend (n.s.) \\
+large & A1 & base & accuracy & 90 & 0.3768 & 0.3835 & -0.006679 & -1.742 & 0.2282 & 0.3251 & 0.428 & 480 & bad trend (n.s.) \\
+large & A2 & base & accuracy & 90 & 0.3818 & 0.3823 & -0.0004383 & -0.1147 & 0.9333 & 0.8092 & 0.9333 & 1.001e+05 & bad trend (n.s.) \\
+large & A3 & base & accuracy & 90 & 0.3745 & 0.3594 & 0.01517 & 4.222 & 0.02482 & 0.05495 & 0.1377 & 136 & good trend (n.s.) \\
+large & A3adv & base & accuracy & 90 & 0.3679 & 0.3554 & 0.01248 & 3.512 & 0.004482 & 0.01411 & 0.04838 & 84 & GOOD (significant) \\
+medium & A0\_A3 & base & accuracy & 90 & 0.4139 & 0.4055 & 0.008475 & 2.09 & 0.1263 & 0.1414 & 0.2841 & 297 & good trend (n.s.) \\
+medium & A1 & base & accuracy & 90 & 0.4129 & 0.408 & 0.004864 & 1.192 & 0.3709 & 0.3478 & 0.6182 & 874 & good trend (n.s.) \\
+medium & A2 & base & accuracy & 90 & 0.4149 & 0.4065 & 0.008395 & 2.065 & 0.08418 & 0.06476 & 0.2104 & 232 & good trend (n.s.) \\
+medium & A3 & base & accuracy & 90 & 0.42 & 0.4105 & 0.009549 & 2.326 & 0.07652 & 0.2352 & 0.2026 & 220 & good trend (n.s.) \\
+medium & A3adv & base & accuracy & 90 & 0.3714 & 0.3704 & 0.000963 & 0.26 & 0.8016 & 0.00234 & 0.918 & 1.112e+04 & good trend (n.s.) \\
+small & A0\_A3 & base & accuracy & 90 & 0.4152 & 0.3875 & 0.02773 & 7.157 & 0.0001621 & 3.347e-05 & 0.007294 & 46 & GOOD (significant) \\
+small & A1 & base & accuracy & 90 & 0.4084 & 0.404 & 0.004401 & 1.09 & 0.5439 & 0.1147 & 0.7648 & 1903 & good trend (n.s.) \\
+small & A2 & base & accuracy & 90 & 0.4063 & 0.4046 & 0.001735 & 0.4287 & 0.762 & 0.3653 & 0.9023 & 7653 & good trend (n.s.) \\
+small & A3 & base & accuracy & 90 & 0.3997 & 0.3898 & 0.009864 & 2.53 & 0.1449 & 0.104 & 0.3105 & 327 & good trend (n.s.) \\
+small & A3adv & base & accuracy & 90 & 0.3686 & 0.3772 & -0.008648 & -2.293 & 0.02265 & 0.03805 & 0.1377 & 132 & bad trend (n.s.) \\
+large & A0\_A3 & base & client-drift E\_drift & 90 & 0.01151 & 0.01426 & -0.002759 & -19.34 & 9.29e-05 & 5.289e-07 & 9.29e-05 & 43 & GOOD (significant) \\
+large & A1 & base & client-drift E\_drift & 90 & 0.01112 & 0.01602 & -0.004903 & -30.6 & 8.795e-08 & 5.105e-12 & 1.365e-07 & 21 & GOOD (significant) \\
+large & A2 & base & client-drift E\_drift & 90 & 0.01152 & 0.01623 & -0.004708 & -29.01 & 4.386e-07 & 3.379e-11 & 5.723e-07 & 24 & GOOD (significant) \\
+large & A3 & base & client-drift E\_drift & 90 & 0.01163 & 0.01593 & -0.004297 & -26.97 & 4.645e-08 & 1.719e-12 & 8.71e-08 & 20 & GOOD (significant) \\
+large & A3adv & base & client-drift E\_drift & 90 & 0.01862 & 0.04099 & -0.02237 & -54.57 & 1.398e-15 & 1.744e-16 & 1.573e-14 & 8 & GOOD (significant) \\
+medium & A0\_A3 & base & client-drift E\_drift & 90 & 0.01166 & 0.01442 & -0.002757 & -19.12 & 6.51e-05 & 4.728e-09 & 6.83e-05 & 41 & GOOD (significant) \\
+medium & A1 & base & client-drift E\_drift & 90 & 0.01168 & 0.01646 & -0.004772 & -29 & 1.076e-09 & 7.096e-14 & 4.305e-09 & 16 & GOOD (significant) \\
+medium & A2 & base & client-drift E\_drift & 90 & 0.01145 & 0.0166 & -0.005151 & -31.04 & 2.497e-09 & 3.386e-14 & 7.491e-09 & 17 & GOOD (significant) \\
+medium & A3 & base & client-drift E\_drift & 90 & 0.01233 & 0.01525 & -0.002919 & -19.14 & 2.956e-05 & 1.821e-07 & 3.244e-05 & 37 & GOOD (significant) \\
+medium & A3adv & base & client-drift E\_drift & 90 & 0.01883 & 0.03971 & -0.02088 & -52.57 & 4.998e-21 & 1.744e-16 & 1.291e-19 & 5 & GOOD (significant) \\
+small & A0\_A3 & base & client-drift E\_drift & 90 & 0.01095 & 0.01468 & -0.003734 & -25.44 & 1.304e-07 & 1.329e-10 & 1.779e-07 & 22 & GOOD (significant) \\
+small & A1 & base & client-drift E\_drift & 90 & 0.01128 & 0.01726 & -0.005978 & -34.63 & 6.026e-08 & 8.244e-12 & 9.798e-08 & 21 & GOOD (significant) \\
+small & A2 & base & client-drift E\_drift & 90 & 0.01073 & 0.01773 & -0.006998 & -39.47 & 3.076e-09 & 1.873e-14 & 8.65e-09 & 17 & GOOD (significant) \\
+small & A3 & base & client-drift E\_drift & 90 & 0.01192 & 0.01533 & -0.003408 & -22.24 & 1.88e-05 & 2.464e-07 & 2.169e-05 & 35 & GOOD (significant) \\
+small & A3adv & base & client-drift E\_drift & 90 & 0.01638 & 0.054 & -0.03762 & -69.67 & 4.035e-14 & 1.744e-16 & 3.026e-13 & 9 & GOOD (significant) \\
+large & A0\_A3 & base & drift alignment S\_CDA & 90 & 0.3143 & 0.2727 & 0.04156 & 15.24 & 1.016e-12 & 8.922e-11 & 1.474e-12 & 11 & GOOD (significant) \\
+large & A1 & base & drift alignment S\_CDA & 90 & 0.3271 & 0.267 & 0.06015 & 22.53 & 4.208e-24 & 1.193e-15 & 1.894e-23 & 4 & GOOD (significant) \\
+large & A2 & base & drift alignment S\_CDA & 90 & 0.3262 & 0.2687 & 0.05755 & 21.42 & 1.741e-23 & 5.812e-15 & 7.122e-23 & 4 & GOOD (significant) \\
+large & A3 & base & drift alignment S\_CDA & 90 & 0.3019 & 0.2629 & 0.03893 & 14.81 & 1.007e-13 & 1.953e-11 & 1.511e-13 & 10 & GOOD (significant) \\
+large & A3adv & base & drift alignment S\_CDA & 90 & 0.2909 & 0.1287 & 0.1622 & 126 & 1.522e-42 & 1.995e-16 & 3.424e-41 & 2 & GOOD (significant) \\
+medium & A0\_A3 & base & drift alignment S\_CDA & 90 & 0.3234 & 0.2812 & 0.04223 & 15.02 & 6.919e-16 & 2.649e-12 & 1.153e-15 & 8 & GOOD (significant) \\
+medium & A1 & base & drift alignment S\_CDA & 90 & 0.3303 & 0.2769 & 0.05339 & 19.28 & 2.887e-20 & 1.168e-14 & 7.218e-20 & 5 & GOOD (significant) \\
+medium & A2 & base & drift alignment S\_CDA & 90 & 0.3374 & 0.2772 & 0.06024 & 21.73 & 3.033e-23 & 4.954e-15 & 1.05e-22 & 4 & GOOD (significant) \\
+medium & A3 & base & drift alignment S\_CDA & 90 & 0.3268 & 0.2733 & 0.05357 & 19.6 & 2.031e-18 & 2.19e-14 & 4.351e-18 & 6 & GOOD (significant) \\
+medium & A3adv & base & drift alignment S\_CDA & 90 & 0.3108 & 0.1421 & 0.1687 & 118.7 & 3.997e-40 & 1.744e-16 & 2.998e-39 & 2 & GOOD (significant) \\
+small & A0\_A3 & base & drift alignment S\_CDA & 90 & 0.3556 & 0.3186 & 0.03697 & 11.6 & 3.46e-12 & 1.294e-10 & 4.866e-12 & 11 & GOOD (significant) \\
+small & A1 & base & drift alignment S\_CDA & 90 & 0.3595 & 0.3061 & 0.05342 & 17.45 & 1.992e-22 & 2.778e-15 & 6.401e-22 & 5 & GOOD (significant) \\
+small & A2 & base & drift alignment S\_CDA & 90 & 0.3591 & 0.3019 & 0.05716 & 18.93 & 1.242e-21 & 6.195e-15 & 3.493e-21 & 5 & GOOD (significant) \\
+small & A3 & base & drift alignment S\_CDA & 90 & 0.3424 & 0.3185 & 0.02394 & 7.516 & 3.255e-07 & 1.025e-06 & 3.406e-07 & 24 & GOOD (significant) \\
+small & A3adv & base & drift alignment S\_CDA & 90 & 0.3382 & 0.1595 & 0.1786 & 112 & 2.226e-40 & 1.744e-16 & 2.004e-39 & 2 & GOOD (significant) \\
+large & A0\_A3 & JEQFL & accuracy & 90 & 0.3761 & 0.3635 & 0.01256 & 3.456 & 0.03198 & 0.01818 & 0.1439 & 149 & good trend (n.s.) \\
+large & A1 & JEQFL & accuracy & 90 & 0.3768 & 0.378 & -0.001185 & -0.3135 & 0.8364 & 0.6933 & 0.918 & 1.647e+04 & bad trend (n.s.) \\
+large & A2 & JEQFL & accuracy & 90 & 0.3818 & 0.3891 & -0.007296 & -1.875 & 0.1724 & 0.6896 & 0.3525 & 374 & bad trend (n.s.) \\
+large & A3 & JEQFL & accuracy & 90 & 0.3745 & 0.364 & 0.01049 & 2.881 & 0.1097 & 0.1045 & 0.2599 & 271 & good trend (n.s.) \\
+large & A3adv & JEQFL & accuracy & 90 & 0.3679 & 0.3556 & 0.01221 & 3.433 & 0.003339 & 0.006447 & 0.04838 & 78 & GOOD (significant) \\
+medium & A0\_A3 & JEQFL & accuracy & 90 & 0.4139 & 0.4027 & 0.01125 & 2.793 & 0.04925 & 0.06246 & 0.1847 & 178 & good trend (n.s.) \\
+medium & A1 & JEQFL & accuracy & 90 & 0.4129 & 0.406 & 0.006901 & 1.7 & 0.2396 & 0.1002 & 0.4313 & 505 & good trend (n.s.) \\
+medium & A2 & JEQFL & accuracy & 90 & 0.4149 & 0.4113 & 0.003586 & 0.8719 & 0.5129 & 0.3859 & 0.7446 & 1638 & good trend (n.s.) \\
+medium & A3 & JEQFL & accuracy & 90 & 0.42 & 0.4084 & 0.01162 & 2.844 & 0.03762 & 0.05571 & 0.1539 & 159 & good trend (n.s.) \\
+medium & A3adv & JEQFL & accuracy & 90 & 0.3714 & 0.3731 & -0.001753 & -0.4698 & 0.672 & 0.1033 & 0.864 & 3915 & bad trend (n.s.) \\
+small & A0\_A3 & JEQFL & accuracy & 90 & 0.4152 & 0.3965 & 0.01872 & 4.722 & 0.0153 & 0.01297 & 0.1148 & 116 & good trend (n.s.) \\
+small & A1 & JEQFL & accuracy & 90 & 0.4084 & 0.4067 & 0.001667 & 0.4098 & 0.8264 & 0.2548 & 0.918 & 1.46e+04 & good trend (n.s.) \\
+small & A2 & JEQFL & accuracy & 90 & 0.4063 & 0.4189 & -0.01259 & -3.006 & 0.05521 & 0.1452 & 0.1888 & 188 & bad trend (n.s.) \\
+small & A3 & JEQFL & accuracy & 90 & 0.3997 & 0.3951 & 0.004574 & 1.158 & 0.4411 & 0.2436 & 0.6845 & 1180 & good trend (n.s.) \\
+small & A3adv & JEQFL & accuracy & 90 & 0.3686 & 0.3798 & -0.01122 & -2.953 & 0.005375 & 0.008652 & 0.04838 & 87 & BAD (significant) \\
+large & A0\_A3 & JEQFL & client-drift E\_drift & 90 & 0.01151 & 0.01395 & -0.002445 & -17.52 & 6.526e-05 & 8.069e-08 & 6.83e-05 & 41 & GOOD (significant) \\
+large & A1 & JEQFL & client-drift E\_drift & 90 & 0.01112 & 0.01609 & -0.004972 & -30.9 & 9.757e-08 & 1.186e-11 & 1.416e-07 & 21 & GOOD (significant) \\
+large & A2 & JEQFL & client-drift E\_drift & 90 & 0.01152 & 0.01587 & -0.004343 & -27.37 & 1.023e-07 & 1.848e-11 & 1.438e-07 & 22 & GOOD (significant) \\
+large & A3 & JEQFL & client-drift E\_drift & 90 & 0.01163 & 0.01562 & -0.003986 & -25.52 & 1.636e-06 & 3.379e-11 & 2.045e-06 & 27 & GOOD (significant) \\
+large & A3adv & JEQFL & client-drift E\_drift & 90 & 0.01862 & 0.04088 & -0.02226 & -54.45 & 5.931e-16 & 1.929e-16 & 8.897e-15 & 8 & GOOD (significant) \\
+medium & A0\_A3 & JEQFL & client-drift E\_drift & 90 & 0.01166 & 0.01418 & -0.002512 & -17.72 & 8.667e-05 & 4.844e-09 & 8.864e-05 & 42 & GOOD (significant) \\
+medium & A1 & JEQFL & client-drift E\_drift & 90 & 0.01168 & 0.01659 & -0.004908 & -29.58 & 5.015e-08 & 8.27e-14 & 9.027e-08 & 20 & GOOD (significant) \\
+medium & A2 & JEQFL & client-drift E\_drift & 90 & 0.01145 & 0.01675 & -0.005304 & -31.66 & 1.548e-09 & 1.823e-15 & 4.975e-09 & 16 & GOOD (significant) \\
+medium & A3 & JEQFL & client-drift E\_drift & 90 & 0.01233 & 0.01539 & -0.003062 & -19.89 & 2.387e-05 & 8.827e-09 & 2.685e-05 & 36 & GOOD (significant) \\
+medium & A3adv & JEQFL & client-drift E\_drift & 90 & 0.01883 & 0.04021 & -0.02138 & -53.16 & 5.736e-21 & 1.744e-16 & 1.291e-19 & 5 & GOOD (significant) \\
+small & A0\_A3 & JEQFL & client-drift E\_drift & 90 & 0.01095 & 0.01482 & -0.003877 & -26.15 & 5.739e-08 & 6.827e-11 & 9.798e-08 & 21 & GOOD (significant) \\
+small & A1 & JEQFL & client-drift E\_drift & 90 & 0.01128 & 0.01741 & -0.00613 & -35.2 & 7.504e-09 & 5.66e-13 & 1.608e-08 & 18 & GOOD (significant) \\
+small & A2 & JEQFL & client-drift E\_drift & 90 & 0.01073 & 0.01827 & -0.007536 & -41.25 & 9.945e-10 & 1.704e-14 & 4.305e-09 & 16 & GOOD (significant) \\
+small & A3 & JEQFL & client-drift E\_drift & 90 & 0.01192 & 0.01582 & -0.003905 & -24.68 & 6.418e-06 & 1.706e-07 & 7.6e-06 & 31 & GOOD (significant) \\
+small & A3adv & JEQFL & client-drift E\_drift & 90 & 0.01638 & 0.05331 & -0.03693 & -69.28 & 1.039e-14 & 1.744e-16 & 9.349e-14 & 9 & GOOD (significant) \\
+large & A0\_A3 & JEQFL & drift alignment S\_CDA & 90 & 0.3143 & 0.2807 & 0.03357 & 11.96 & 1.967e-09 & 9.94e-09 & 2.212e-09 & 16 & GOOD (significant) \\
+large & A1 & JEQFL & drift alignment S\_CDA & 90 & 0.3271 & 0.2731 & 0.05402 & 19.78 & 1.638e-17 & 1.145e-12 & 3.35e-17 & 7 & GOOD (significant) \\
+large & A2 & JEQFL & drift alignment S\_CDA & 90 & 0.3262 & 0.2743 & 0.05192 & 18.93 & 8.986e-20 & 8.021e-14 & 2.022e-19 & 6 & GOOD (significant) \\
+large & A3 & JEQFL & drift alignment S\_CDA & 90 & 0.3019 & 0.2706 & 0.03128 & 11.56 & 6.667e-09 & 5.035e-08 & 7.317e-09 & 18 & GOOD (significant) \\
+large & A3adv & JEQFL & drift alignment S\_CDA & 90 & 0.2909 & 0.128 & 0.163 & 127.3 & 2.077e-45 & 1.744e-16 & 9.346e-44 & 1 & GOOD (significant) \\
+medium & A0\_A3 & JEQFL & drift alignment S\_CDA & 90 & 0.3234 & 0.2804 & 0.04306 & 15.36 & 6.422e-17 & 1.249e-12 & 1.159e-16 & 7 & GOOD (significant) \\
+medium & A1 & JEQFL & drift alignment S\_CDA & 90 & 0.3303 & 0.277 & 0.05329 & 19.24 & 8.001e-17 & 6.559e-13 & 1.385e-16 & 7 & GOOD (significant) \\
+medium & A2 & JEQFL & drift alignment S\_CDA & 90 & 0.3374 & 0.2775 & 0.05991 & 21.59 & 3.255e-20 & 6.882e-14 & 7.708e-20 & 5 & GOOD (significant) \\
+medium & A3 & JEQFL & drift alignment S\_CDA & 90 & 0.3268 & 0.2759 & 0.05091 & 18.45 & 6.437e-17 & 1.663e-13 & 1.159e-16 & 7 & GOOD (significant) \\
+medium & A3adv & JEQFL & drift alignment S\_CDA & 90 & 0.3108 & 0.1437 & 0.1671 & 116.3 & 1.949e-40 & 1.744e-16 & 2.004e-39 & 2 & GOOD (significant) \\
+small & A0\_A3 & JEQFL & drift alignment S\_CDA & 90 & 0.3556 & 0.3151 & 0.0405 & 12.85 & 1.774e-15 & 2.574e-12 & 2.851e-15 & 8 & GOOD (significant) \\
+small & A1 & JEQFL & drift alignment S\_CDA & 90 & 0.3595 & 0.3014 & 0.05808 & 19.27 & 3.915e-25 & 2.076e-15 & 2.202e-24 & 4 & GOOD (significant) \\
+small & A2 & JEQFL & drift alignment S\_CDA & 90 & 0.3591 & 0.3018 & 0.05727 & 18.98 & 1.573e-20 & 2.19e-14 & 4.164e-20 & 5 & GOOD (significant) \\
+small & A3 & JEQFL & drift alignment S\_CDA & 90 & 0.3424 & 0.3138 & 0.02866 & 9.134 & 1.433e-09 & 1.876e-08 & 1.653e-09 & 16 & GOOD (significant) \\
+small & A3adv & JEQFL & drift alignment S\_CDA & 90 & 0.3382 & 0.1641 & 0.1741 & 106.1 & 1.175e-41 & 1.744e-16 & 1.763e-40 & 2 & GOOD (significant) \\
+large & A0\_A3 & CDQ & accuracy & 90 & 0.3761 & 0.3755 & 0.0006173 & 0.1644 & 0.9252 & 0.2973 & 0.9333 & 7.976e+04 & good trend (n.s.) \\
+large & A1 & CDQ & accuracy & 90 & 0.3768 & 0.3642 & 0.0126 & 3.459 & 0.02755 & 0.00243 & 0.1377 & 141 & good trend (n.s.) \\
+large & A2 & CDQ & accuracy & 90 & 0.3818 & 0.367 & 0.01483 & 4.04 & 0.001608 & 0.003354 & 0.03617 & 67 & GOOD (significant) \\
+large & A3 & CDQ & accuracy & 90 & 0.3745 & 0.373 & 0.001488 & 0.3988 & 0.7528 & 0.3573 & 0.9023 & 7081 & good trend (n.s.) \\
+large & A3adv & CDQ & accuracy & 90 & 0.3679 & 0.363 & 0.004877 & 1.343 & 0.2077 & 0.4542 & 0.4065 & 439 & good trend (n.s.) \\
+medium & A0\_A3 & CDQ & accuracy & 90 & 0.4139 & 0.4133 & 0.0006667 & 0.1613 & 0.916 & 0.937 & 0.9333 & 6.309e+04 & good trend (n.s.) \\
+medium & A1 & CDQ & accuracy & 90 & 0.4129 & 0.4098 & 0.003031 & 0.7395 & 0.6099 & 0.5435 & 0.8316 & 2694 & good trend (n.s.) \\
+medium & A2 & CDQ & accuracy & 90 & 0.4149 & 0.41 & 0.004957 & 1.209 & 0.367 & 0.376 & 0.6182 & 860 & good trend (n.s.) \\
+medium & A3 & CDQ & accuracy & 90 & 0.42 & 0.4085 & 0.0115 & 2.815 & 0.06946 & 0.1581 & 0.1954 & 210 & good trend (n.s.) \\
+medium & A3adv & CDQ & accuracy & 90 & 0.3714 & 0.3709 & 0.0004753 & 0.1282 & 0.9172 & 0.5023 & 0.9333 & 6.498e+04 & good trend (n.s.) \\
+small & A0\_A3 & CDQ & accuracy & 90 & 0.4152 & 0.4024 & 0.01285 & 3.194 & 0.06139 & 0.2 & 0.1888 & 197 & good trend (n.s.) \\
+small & A1 & CDQ & accuracy & 90 & 0.4084 & 0.4041 & 0.004253 & 1.052 & 0.4911 & 0.5101 & 0.7366 & 1478 & good trend (n.s.) \\
+small & A2 & CDQ & accuracy & 90 & 0.4063 & 0.4105 & -0.00421 & -1.025 & 0.4067 & 0.5355 & 0.6537 & 1017 & bad trend (n.s.) \\
+small & A3 & CDQ & accuracy & 90 & 0.3997 & 0.4024 & -0.002691 & -0.6689 & 0.6316 & 0.68 & 0.8359 & 3051 & bad trend (n.s.) \\
+small & A3adv & CDQ & accuracy & 90 & 0.3686 & 0.3674 & 0.001191 & 0.3243 & 0.7298 & 0.6537 & 0.9023 & 5886 & good trend (n.s.) \\
+large & A0\_A3 & CDQ & client-drift E\_drift & 90 & 0.01151 & 0.02614 & -0.01464 & -55.99 & 4.451e-07 & 4.085e-13 & 5.723e-07 & 24 & GOOD (significant) \\
+large & A1 & CDQ & client-drift E\_drift & 90 & 0.01112 & 0.02633 & -0.01521 & -57.77 & 7.377e-09 & 1.876e-13 & 1.608e-08 & 18 & GOOD (significant) \\
+large & A2 & CDQ & client-drift E\_drift & 90 & 0.01152 & 0.02666 & -0.01513 & -56.77 & 6.642e-09 & 5.66e-13 & 1.573e-08 & 18 & GOOD (significant) \\
+large & A3 & CDQ & client-drift E\_drift & 90 & 0.01163 & 0.0251 & -0.01347 & -53.65 & 8.564e-09 & 1.601e-15 & 1.752e-08 & 18 & GOOD (significant) \\
+large & A3adv & CDQ & client-drift E\_drift & 90 & 0.01862 & 0.03751 & -0.01889 & -50.35 & 1.82e-06 & 1.219e-11 & 2.213e-06 & 28 & GOOD (significant) \\
+medium & A0\_A3 & CDQ & client-drift E\_drift & 90 & 0.01166 & 0.02625 & -0.01458 & -55.56 & 6.327e-09 & 6.186e-16 & 1.573e-08 & 18 & GOOD (significant) \\
+medium & A1 & CDQ & client-drift E\_drift & 90 & 0.01168 & 0.02798 & -0.0163 & -58.24 & 1.317e-09 & 1.995e-16 & 4.56e-09 & 16 & GOOD (significant) \\
+medium & A2 & CDQ & client-drift E\_drift & 90 & 0.01145 & 0.02857 & -0.01713 & -59.94 & 7.186e-10 & 2.98e-16 & 3.593e-09 & 15 & GOOD (significant) \\
+medium & A3 & CDQ & client-drift E\_drift & 90 & 0.01233 & 0.02875 & -0.01642 & -57.1 & 1.908e-10 & 4.157e-16 & 1.227e-09 & 14 & GOOD (significant) \\
+medium & A3adv & CDQ & client-drift E\_drift & 90 & 0.01883 & 0.03707 & -0.01824 & -49.2 & 9.279e-08 & 9.931e-14 & 1.392e-07 & 21 & GOOD (significant) \\
+small & A0\_A3 & CDQ & client-drift E\_drift & 90 & 0.01095 & 0.03355 & -0.0226 & -67.37 & 1.148e-09 & 2.063e-16 & 4.305e-09 & 16 & GOOD (significant) \\
+small & A1 & CDQ & client-drift E\_drift & 90 & 0.01128 & 0.03294 & -0.02166 & -65.74 & 6.258e-10 & 1.744e-16 & 3.52e-09 & 15 & GOOD (significant) \\
+small & A2 & CDQ & client-drift E\_drift & 90 & 0.01073 & 0.03231 & -0.02158 & -66.78 & 6.437e-09 & 2.608e-16 & 1.573e-08 & 18 & GOOD (significant) \\
+small & A3 & CDQ & client-drift E\_drift & 90 & 0.01192 & 0.03588 & -0.02396 & -66.79 & 6.097e-08 & 2.608e-16 & 9.798e-08 & 21 & GOOD (significant) \\
+small & A3adv & CDQ & client-drift E\_drift & 90 & 0.01638 & 0.03588 & -0.0195 & -54.35 & 1.408e-08 & 3.594e-15 & 2.755e-08 & 19 & GOOD (significant) \\
+large & A0\_A3 & CDQ & drift alignment S\_CDA & 90 & 0.3143 & 0.2807 & 0.03354 & 11.95 & 7.995e-10 & 6.315e-09 & 9.468e-10 & 15 & GOOD (significant) \\
+large & A1 & CDQ & drift alignment S\_CDA & 90 & 0.3271 & 0.2895 & 0.03761 & 12.99 & 4.534e-11 & 6.626e-09 & 6.001e-11 & 13 & GOOD (significant) \\
+large & A2 & CDQ & drift alignment S\_CDA & 90 & 0.3262 & 0.2962 & 0.03 & 10.13 & 2.269e-08 & 1.284e-07 & 2.431e-08 & 19 & GOOD (significant) \\
+large & A3 & CDQ & drift alignment S\_CDA & 90 & 0.3019 & 0.2695 & 0.0324 & 12.02 & 2.824e-10 & 7.649e-09 & 3.53e-10 & 14 & GOOD (significant) \\
+large & A3adv & CDQ & drift alignment S\_CDA & 90 & 0.2909 & 0.2836 & 0.007317 & 2.58 & 0.09188 & 0.02621 & 0.09188 & 244 & good trend (n.s.) \\
+medium & A0\_A3 & CDQ & drift alignment S\_CDA & 90 & 0.3234 & 0.2916 & 0.03185 & 10.92 & 6.283e-10 & 7.12e-09 & 7.641e-10 & 15 & GOOD (significant) \\
+medium & A1 & CDQ & drift alignment S\_CDA & 90 & 0.3303 & 0.2886 & 0.04167 & 14.44 & 7.412e-15 & 8.479e-12 & 1.15e-14 & 9 & GOOD (significant) \\
+medium & A2 & CDQ & drift alignment S\_CDA & 90 & 0.3374 & 0.3007 & 0.03672 & 12.21 & 7.994e-11 & 9.717e-10 & 1.028e-10 & 13 & GOOD (significant) \\
+medium & A3 & CDQ & drift alignment S\_CDA & 90 & 0.3268 & 0.2789 & 0.04796 & 17.2 & 4.224e-17 & 2.181e-13 & 8.265e-17 & 7 & GOOD (significant) \\
+medium & A3adv & CDQ & drift alignment S\_CDA & 90 & 0.3108 & 0.2796 & 0.03116 & 11.14 & 1.684e-11 & 2.698e-10 & 2.297e-11 & 12 & GOOD (significant) \\
+small & A0\_A3 & CDQ & drift alignment S\_CDA & 90 & 0.3556 & 0.2906 & 0.06497 & 22.35 & 1.188e-25 & 3.37e-15 & 7.636e-25 & 4 & GOOD (significant) \\
+small & A1 & CDQ & drift alignment S\_CDA & 90 & 0.3595 & 0.2977 & 0.06175 & 20.74 & 1.212e-24 & 2.363e-15 & 6.06e-24 & 4 & GOOD (significant) \\
+small & A2 & CDQ & drift alignment S\_CDA & 90 & 0.3591 & 0.2987 & 0.06037 & 20.21 & 3.07e-22 & 7.741e-15 & 9.21e-22 & 5 & GOOD (significant) \\
+small & A3 & CDQ & drift alignment S\_CDA & 90 & 0.3424 & 0.2839 & 0.05849 & 20.6 & 2.465e-23 & 9.976e-15 & 9.245e-23 & 4 & GOOD (significant) \\
+small & A3adv & CDQ & drift alignment S\_CDA & 90 & 0.3382 & 0.3232 & 0.01496 & 4.628 & 0.001481 & 0.00149 & 0.001514 & 66 & GOOD (significant) \\
+\bottomrule
+\end{tabular}
+\end{table}

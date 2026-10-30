@@ -1,0 +1,63 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Paired comparison by alpha.}\label{tab:table7_paired_by_alpha}
+\begin{tabular}{llllllllllllll}
+\toprule
+scale & alpha & baseline & metric & n\_pairs & mean\_method & mean\_baseline & gap & rel\_change\_pct & p & p\_wilcoxon & q\_BH & n\_80pow & verdict \\
+\midrule
+large & 25 & base & accuracy & 150 & 0.3712 & 0.3642 & 0.006993 & 1.92 & 0.1106 & 0.04609 & 0.2014 & 457 & good trend (n.s.) \\
+large & 50 & base & accuracy & 150 & 0.3758 & 0.3688 & 0.007059 & 1.914 & 0.1119 & 0.2583 & 0.2014 & 461 & good trend (n.s.) \\
+large & 100 & base & accuracy & 150 & 0.3793 & 0.374 & 0.005285 & 1.413 & 0.2369 & 0.1894 & 0.328 & 835 & good trend (n.s.) \\
+medium & 25 & base & accuracy & 150 & 0.4107 & 0.4008 & 0.009837 & 2.454 & 0.01992 & 0.01568 & 0.09061 & 213 & good trend (n.s.) \\
+medium & 50 & base & accuracy & 150 & 0.4036 & 0.403 & 0.0005889 & 0.1461 & 0.8641 & 0.5272 & 0.9149 & 4.004e+04 & good trend (n.s.) \\
+medium & 100 & base & accuracy & 150 & 0.4056 & 0.3967 & 0.008922 & 2.249 & 0.02517 & 0.02057 & 0.09061 & 231 & good trend (n.s.) \\
+small & 25 & base & accuracy & 150 & 0.4007 & 0.3877 & 0.01302 & 3.359 & 0.01943 & 0.01021 & 0.09061 & 211 & good trend (n.s.) \\
+small & 50 & base & accuracy & 150 & 0.3986 & 0.3927 & 0.005915 & 1.506 & 0.2069 & 0.03229 & 0.3105 & 733 & good trend (n.s.) \\
+small & 100 & base & accuracy & 150 & 0.3997 & 0.3975 & 0.002115 & 0.532 & 0.6334 & 0.3239 & 0.7601 & 5156 & good trend (n.s.) \\
+large & 25 & base & client-drift E\_drift & 150 & 0.01356 & 0.02293 & -0.009366 & -40.85 & 6.296e-13 & 1.268e-20 & 3.777e-12 & 19 & GOOD (significant) \\
+large & 50 & base & client-drift E\_drift & 150 & 0.01311 & 0.01998 & -0.006863 & -34.36 & 4.564e-10 & 1.64e-19 & 8.215e-10 & 27 & GOOD (significant) \\
+large & 100 & base & client-drift E\_drift & 150 & 0.01197 & 0.01916 & -0.007193 & -37.54 & 6.429e-09 & 5.978e-19 & 7.715e-09 & 32 & GOOD (significant) \\
+medium & 25 & base & client-drift E\_drift & 150 & 0.01387 & 0.02259 & -0.008727 & -38.62 & 5.844e-14 & 2.84e-21 & 5.26e-13 & 18 & GOOD (significant) \\
+medium & 50 & base & client-drift E\_drift & 150 & 0.01349 & 0.02022 & -0.006725 & -33.26 & 2.798e-12 & 1.104e-19 & 1.007e-11 & 21 & GOOD (significant) \\
+medium & 100 & base & client-drift E\_drift & 150 & 0.01222 & 0.01865 & -0.006433 & -34.5 & 1.214e-11 & 4.718e-19 & 3.122e-11 & 22 & GOOD (significant) \\
+small & 25 & base & client-drift E\_drift & 150 & 0.01338 & 0.02566 & -0.01228 & -47.86 & 9.522e-10 & 5.117e-23 & 1.558e-09 & 28 & GOOD (significant) \\
+small & 50 & base & client-drift E\_drift & 150 & 0.01222 & 0.02351 & -0.01129 & -48.01 & 2.196e-08 & 1.203e-19 & 2.325e-08 & 34 & GOOD (significant) \\
+small & 100 & base & client-drift E\_drift & 150 & 0.01116 & 0.02223 & -0.01108 & -49.82 & 4.472e-08 & 2.137e-18 & 4.472e-08 & 36 & GOOD (significant) \\
+large & 25 & base & drift alignment S\_CDA & 150 & 0.3084 & 0.2269 & 0.08152 & 35.94 & 1.023e-35 & 7.636e-26 & 1.841e-34 & 5 & GOOD (significant) \\
+large & 50 & base & drift alignment S\_CDA & 150 & 0.31 & 0.2468 & 0.06315 & 25.59 & 1.268e-21 & 1.163e-19 & 1.426e-21 & 10 & GOOD (significant) \\
+large & 100 & base & drift alignment S\_CDA & 150 & 0.3179 & 0.2464 & 0.07156 & 29.05 & 6.112e-27 & 1.952e-22 & 1.375e-26 & 7 & GOOD (significant) \\
+medium & 25 & base & drift alignment S\_CDA & 150 & 0.327 & 0.2413 & 0.08576 & 35.54 & 3.82e-33 & 2.056e-25 & 3.438e-32 & 5 & GOOD (significant) \\
+medium & 50 & base & drift alignment S\_CDA & 150 & 0.3241 & 0.2527 & 0.07136 & 28.24 & 3.561e-27 & 4.615e-24 & 9.156e-27 & 7 & GOOD (significant) \\
+medium & 100 & base & drift alignment S\_CDA & 150 & 0.3261 & 0.2564 & 0.06975 & 27.21 & 1.346e-24 & 9.786e-22 & 2.422e-24 & 8 & GOOD (significant) \\
+small & 25 & base & drift alignment S\_CDA & 150 & 0.3452 & 0.2709 & 0.07438 & 27.46 & 9.409e-26 & 8.012e-23 & 1.882e-25 & 8 & GOOD (significant) \\
+small & 50 & base & drift alignment S\_CDA & 150 & 0.3521 & 0.2854 & 0.06675 & 23.39 & 4.553e-20 & 2.433e-20 & 4.821e-20 & 11 & GOOD (significant) \\
+small & 100 & base & drift alignment S\_CDA & 150 & 0.3555 & 0.2866 & 0.06894 & 24.06 & 5.615e-22 & 2.84e-21 & 6.738e-22 & 10 & GOOD (significant) \\
+large & 25 & JEQFL & accuracy & 150 & 0.3712 & 0.3678 & 0.0034 & 0.9245 & 0.4621 & 0.06729 & 0.5941 & 2166 & good trend (n.s.) \\
+large & 50 & JEQFL & accuracy & 150 & 0.3758 & 0.3684 & 0.007415 & 2.013 & 0.07871 & 0.05973 & 0.1771 & 376 & good trend (n.s.) \\
+large & 100 & JEQFL & accuracy & 150 & 0.3793 & 0.374 & 0.005252 & 1.404 & 0.207 & 0.1714 & 0.3105 & 733 & good trend (n.s.) \\
+medium & 25 & JEQFL & accuracy & 150 & 0.4107 & 0.4009 & 0.009733 & 2.428 & 0.03176 & 0.01863 & 0.09529 & 251 & good trend (n.s.) \\
+medium & 50 & JEQFL & accuracy & 150 & 0.4036 & 0.4037 & -0.0001 & -0.02477 & 0.9803 & 0.8005 & 0.9803 & 1.934e+06 & bad trend (n.s.) \\
+medium & 100 & JEQFL & accuracy & 150 & 0.4056 & 0.3963 & 0.009326 & 2.353 & 0.0163 & 0.002666 & 0.09061 & 200 & good trend (n.s.) \\
+small & 25 & JEQFL & accuracy & 150 & 0.4007 & 0.3894 & 0.01126 & 2.89 & 0.0248 & 0.01026 & 0.09061 & 229 & good trend (n.s.) \\
+small & 50 & JEQFL & accuracy & 150 & 0.3986 & 0.4005 & -0.001911 & -0.4772 & 0.7191 & 0.6798 & 0.809 & 9068 & bad trend (n.s.) \\
+small & 100 & JEQFL & accuracy & 150 & 0.3997 & 0.4083 & -0.008652 & -2.119 & 0.07167 & 0.1346 & 0.1771 & 358 & bad trend (n.s.) \\
+large & 25 & JEQFL & client-drift E\_drift & 150 & 0.01356 & 0.02242 & -0.008858 & -39.51 & 2.029e-12 & 8.146e-21 & 9.132e-12 & 20 & GOOD (significant) \\
+large & 50 & JEQFL & client-drift E\_drift & 150 & 0.01311 & 0.01979 & -0.006676 & -33.74 & 1.732e-09 & 1.557e-17 & 2.593e-09 & 29 & GOOD (significant) \\
+large & 100 & JEQFL & client-drift E\_drift & 150 & 0.01197 & 0.01924 & -0.00727 & -37.79 & 1.873e-09 & 3.982e-19 & 2.593e-09 & 29 & GOOD (significant) \\
+medium & 25 & JEQFL & client-drift E\_drift & 150 & 0.01387 & 0.02307 & -0.009204 & -39.89 & 3.61e-14 & 1.04e-22 & 5.26e-13 & 17 & GOOD (significant) \\
+medium & 50 & JEQFL & client-drift E\_drift & 150 & 0.01349 & 0.01997 & -0.006481 & -32.45 & 3.217e-11 & 9.955e-20 & 7.239e-11 & 23 & GOOD (significant) \\
+medium & 100 & JEQFL & client-drift E\_drift & 150 & 0.01222 & 0.01883 & -0.006611 & -35.11 & 7.694e-12 & 9.785e-20 & 2.308e-11 & 22 & GOOD (significant) \\
+small & 25 & JEQFL & client-drift E\_drift & 150 & 0.01338 & 0.02573 & -0.01235 & -48.01 & 4.357e-10 & 5.943e-23 & 8.215e-10 & 27 & GOOD (significant) \\
+small & 50 & JEQFL & client-drift E\_drift & 150 & 0.01222 & 0.02382 & -0.0116 & -48.68 & 8.288e-09 & 4.256e-20 & 9.323e-09 & 32 & GOOD (significant) \\
+small & 100 & JEQFL & client-drift E\_drift & 150 & 0.01116 & 0.02224 & -0.01108 & -49.83 & 2.858e-09 & 1.405e-19 & 3.675e-09 & 30 & GOOD (significant) \\
+large & 25 & JEQFL & drift alignment S\_CDA & 150 & 0.3084 & 0.2324 & 0.07595 & 32.68 & 6.403e-32 & 3.638e-25 & 2.881e-31 & 6 & GOOD (significant) \\
+large & 50 & JEQFL & drift alignment S\_CDA & 150 & 0.31 & 0.2529 & 0.05702 & 22.54 & 1.457e-17 & 3.179e-16 & 1.457e-17 & 13 & GOOD (significant) \\
+large & 100 & JEQFL & drift alignment S\_CDA & 150 & 0.3179 & 0.2506 & 0.06727 & 26.84 & 1.558e-22 & 1.224e-19 & 2.11e-22 & 9 & GOOD (significant) \\
+medium & 25 & JEQFL & drift alignment S\_CDA & 150 & 0.327 & 0.2437 & 0.08338 & 34.22 & 6.244e-32 & 1.452e-24 & 2.881e-31 & 6 & GOOD (significant) \\
+medium & 50 & JEQFL & drift alignment S\_CDA & 150 & 0.3241 & 0.2515 & 0.07253 & 28.83 & 4.691e-28 & 1.198e-23 & 1.689e-27 & 7 & GOOD (significant) \\
+medium & 100 & JEQFL & drift alignment S\_CDA & 150 & 0.3261 & 0.2575 & 0.06864 & 26.66 & 1.641e-22 & 8.821e-20 & 2.11e-22 & 9 & GOOD (significant) \\
+small & 25 & JEQFL & drift alignment S\_CDA & 150 & 0.3452 & 0.2688 & 0.07639 & 28.41 & 1.035e-27 & 2.348e-22 & 3.106e-27 & 7 & GOOD (significant) \\
+small & 50 & JEQFL & drift alignment S\_CDA & 150 & 0.3521 & 0.2835 & 0.06861 & 24.2 & 2.154e-23 & 1.373e-22 & 3.231e-23 & 9 & GOOD (significant) \\
+small & 100 & JEQFL & drift alignment S\_CDA & 150 & 0.3555 & 0.2854 & 0.07014 & 24.58 & 1.185e-23 & 3.392e-22 & 1.939e-23 & 9 & GOOD (significant) \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,260 @@
+{
+"medium_fsnr_0.1": {
+"scale": "medium",
+"gamma": 0.1,
+"mode": "fsnr",
+"benchmark": "medium/qft_n63_transpiled.qasm",
+"n_phys_qubits": 162,
+"n_logical_qubits": null,
+"n1q": 5289,
+"n2q_logical": 3400,
+"S_local": {
+"0": 1923,
+"1": 925,
+"5": 186
+},
+"E_link": {
+"0-1": 382,
+"1-5": 104,
+"0-5": 2
+},
+"tau_chip": {
+"0": 1,
+"1": 1,
+"2": 3,
+"3": 3,
+"4": 10,
+"5": 10
+},
+"remote_cx": 146,
+"remote_swap": 171,
+"cost_exec": 7914,
+"compile_sec": 295.4319386482239,
+"qasm_hash": "e7f1086278561e6deeadd98e580c75cf"
+},
+"medium_m1_0.0": {
+"scale": "medium",
+"gamma": 0.0,
+"mode": "m1",
+"benchmark": "medium/qft_n63_transpiled.qasm",
+"n_phys_qubits": 162,
+"n_logical_qubits": null,
+"n1q": 5289,
+"n2q_logical": 3400,
+"S_local": {
+"2": 940,
+"3": 2084,
+"5": 108
+},
+"E_link": {
+"2-3": 362,
+"2-5": 92,
+"3-5": 2
+},
+"tau_chip": {
+"0": 1,
+"1": 1,
+"2": 3,
+"3": 3,
+"4": 10,
+"5": 10
+},
+"remote_cx": 116,
+"remote_swap": 170,
+"cost_exec": 7692,
+"compile_sec": 284.1356701850891,
+"qasm_hash": "f65a99231cd9efe8820bc8f92993c669"
+},
+"medium_m1_none": {
+"scale": "medium",
+"gamma": null,
+"mode": "m1",
+"benchmark": "medium/qft_n63_transpiled.qasm",
+"n_phys_qubits": 162,
+"n_logical_qubits": null,
+"n1q": 5289,
+"n2q_logical": 3400,
+"S_local": {
+"2": 940,
+"3": 2084,
+"5": 108
+},
+"E_link": {
+"2-3": 362,
+"2-5": 92,
+"3-5": 2
+},
+"tau_chip": {
+"0": 1,
+"1": 1,
+"2": 3,
+"3": 3,
+"4": 10,
+"5": 10
+},
+"remote_cx": 116,
+"remote_swap": 170,
+"cost_exec": 7692,
+"compile_sec": 204.16370797157288,
+"qasm_hash": "f65a99231cd9efe8820bc8f92993c669"
+},
+"small_fsnr_0.1": {
+"scale": "small",
+"gamma": 0.1,
+"mode": "fsnr",
+"benchmark": "zcz/qft_n29_transpiled.qasm",
+"n_phys_qubits": 60,
+"n_logical_qubits": null,
+"n1q": 1305,
+"n2q_logical": 812,
+"S_local": {
+"0": 182,
+"1": 149,
+"4": 28
+},
+"E_link": {
+"0-1": 76,
+"1-4": 40,
+"0-4": 8
+},
+"tau_chip": {
+"0": 1,
+"1": 1,
+"2": 3,
+"3": 10,
+"4": 10
+},
+"remote_cx": 48,
+"remote_swap": 38,
+"cost_exec": 1599,
+"compile_sec": 29.679518699645996,
+"qasm_hash": "08578f0165da2afa166444ff279c6a7c"
+},
+"small_fsnr_1.0": {
+"scale": "small",
+"gamma": 1.0,
+"mode": "fsnr",
+"benchmark": "zcz/qft_n29_transpiled.qasm",
+"n_phys_qubits": 60,
+"n_logical_qubits": null,
+"n1q": 1305,
+"n2q_logical": 812,
+"S_local": {
+"0": 177,
+"1": 177,
+"4": 44
+},
+"E_link": {
+"0-1": 84,
+"1-4": 58,
+"0-4": 4
+},
+"tau_chip": {
+"0": 1,
+"1": 1,
+"2": 3,
+"3": 10,
+"4": 10
+},
+"remote_cx": 54,
+"remote_swap": 46,
+"cost_exec": 1858,
+"compile_sec": 19.331188678741455,
+"qasm_hash": "e8f7ac248e9f3cff7ef30ffe2dab70bb"
+},
+"small_fsnr_10.0": {
+"scale": "small",
+"gamma": 10.0,
+"mode": "fsnr",
+"benchmark": "zcz/qft_n29_transpiled.qasm",
+"n_phys_qubits": 60,
+"n_logical_qubits": null,
+"n1q": 1305,
+"n2q_logical": 812,
+"S_local": {
+"0": 192,
+"1": 201,
+"2": 29
+},
+"E_link": {
+"0-1": 152,
+"1-2": 40
+},
+"tau_chip": {
+"0": 1,
+"1": 1,
+"2": 3,
+"3": 10,
+"4": 10
+},
+"remote_cx": 68,
+"remote_swap": 62,
+"cost_exec": 2342,
+"compile_sec": 14.851278305053711,
+"qasm_hash": "1d0d46b5e11a75c1a825760c83ed0a29"
+},
+"small_m1_0.0": {
+"scale": "small",
+"gamma": 0.0,
+"mode": "m1",
+"benchmark": "zcz/qft_n29_transpiled.qasm",
+"n_phys_qubits": 60,
+"n_logical_qubits": null,
+"n1q": 1305,
+"n2q_logical": 812,
+"S_local": {
+"0": 157,
+"1": 156,
+"4": 38
+},
+"E_link": {
+"0-1": 72,
+"1-4": 38,
+"0-4": 32
+},
+"tau_chip": {
+"0": 1,
+"1": 1,
+"2": 3,
+"3": 10,
+"4": 10
+},
+"remote_cx": 58,
+"remote_swap": 42,
+"cost_exec": 1771,
+"compile_sec": 27.225565910339355,
+"qasm_hash": "f1d205d53717251f828073172465f40b"
+},
+"small_m1_none": {
+"scale": "small",
+"gamma": null,
+"mode": "m1",
+"benchmark": "zcz/qft_n29_transpiled.qasm",
+"n_phys_qubits": 60,
+"n_logical_qubits": null,
+"n1q": 1305,
+"n2q_logical": 812,
+"S_local": {
+"0": 157,
+"1": 156,
+"4": 38
+},
+"E_link": {
+"0-1": 72,
+"1-4": 38,
+"0-4": 32
+},
+"tau_chip": {
+"0": 1,
+"1": 1,
+"2": 3,
+"3": 10,
+"4": 10
+},
+"remote_cx": 58,
+"remote_swap": 42,
+"cost_exec": 1771,
+"compile_sec": 12.499304056167603,
+"qasm_hash": "f1d205d53717251f828073172465f40b"
+}
+}

@@ -1,0 +1,30 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Gauss-Markov orphan-shrinkage ablation: CDQ-lit (shrinkage on) vs CDQ (shrinkage removed).}\label{tab:table9_shrinkage_ablation}
+\begin{tabular}{lllllllllllll}
+\toprule
+scale & baseline & metric & n\_pairs & mean\_method & mean\_baseline & gap & rel\_change\_pct & p & p\_wilcoxon & q\_BH & n\_80pow & verdict \\
+\midrule
+large & CDQ & accuracy & 450 & 0.3754 & 0.3685 & 0.006881 & 1.867 & 0.00301 & 5.572e-05 & 0.009029 & 397 & GOOD (significant) \\
+medium & CDQ & accuracy & 450 & 0.4066 & 0.4025 & 0.004126 & 1.025 & 0.1079 & 0.2377 & 0.1618 & 1362 & good trend (n.s.) \\
+small & CDQ & accuracy & 450 & 0.3996 & 0.3974 & 0.002279 & 0.5735 & 0.3577 & 0.65 & 0.3577 & 4166 & good trend (n.s.) \\
+large & CDQ & client-drift E\_drift & 450 & 0.01288 & 0.02835 & -0.01547 & -54.56 & 3.085e-32 & 4.096e-60 & 3.085e-32 & 22 & GOOD (significant) \\
+medium & CDQ & client-drift E\_drift & 450 & 0.01319 & 0.02972 & -0.01653 & -55.62 & 6.611e-40 & 1.436e-71 & 1.983e-39 & 17 & GOOD (significant) \\
+small & CDQ & client-drift E\_drift & 450 & 0.01225 & 0.03411 & -0.02186 & -64.08 & 8.604e-39 & 1.98e-74 & 1.291e-38 & 18 & GOOD (significant) \\
+large & CDQ & drift alignment S\_CDA & 450 & 0.3121 & 0.2839 & 0.02817 & 9.923 & 5.04e-33 & 1.379e-30 & 5.04e-33 & 21 & GOOD (significant) \\
+medium & CDQ & drift alignment S\_CDA & 450 & 0.3258 & 0.2879 & 0.03787 & 13.16 & 2.639e-57 & 8.567e-48 & 3.959e-57 & 11 & GOOD (significant) \\
+small & CDQ & drift alignment S\_CDA & 450 & 0.351 & 0.2989 & 0.05211 & 17.44 & 1.709e-82 & 9.075e-59 & 5.128e-82 & 7 & GOOD (significant) \\
+large & CDQ & reconstruction error & 450 & 0.07855 & 0.1089 & -0.0303 & -27.84 & 2.33e-48 & 3.2e-59 & 2.33e-48 & 13 & GOOD (significant) \\
+medium & CDQ & reconstruction error & 450 & 0.08095 & 0.1193 & -0.03831 & -32.12 & 1.261e-62 & 2.432e-74 & 1.892e-62 & 10 & GOOD (significant) \\
+small & CDQ & reconstruction error & 450 & 0.08383 & 0.1315 & -0.04766 & -36.25 & 1.239e-63 & 1.02e-74 & 3.717e-63 & 9 & GOOD (significant) \\
+large & CDQ & active clients & 450 & 9.452 & 9.452 & -0.0004506 & -0.004767 & 0.8054 & 0.8726 & 0.8054 & 5.813e+04 & bad trend (n.s.) \\
+medium & CDQ & active clients & 450 & 9.471 & 9.47 & 0.0006296 & 0.006648 & 0.7394 & 0.7538 & 0.8054 & 3.187e+04 & good trend (n.s.) \\
+small & CDQ & active clients & 450 & 9.468 & 9.467 & 0.0005926 & 0.006259 & 0.7244 & 0.711 & 0.8054 & 2.838e+04 & good trend (n.s.) \\
+large & CDQ & |g\_hat|/|g*| & 450 & 1.297 & 1.713 & -0.4166 & -24.32 & 3.11e-55 & 9.672e-63 & 3.11e-55 & 11 & n/a (diagnostic) \\
+medium & CDQ & |g\_hat|/|g*| & 450 & 1.253 & 1.619 & -0.3667 & -22.64 & 1.218e-61 & 6.658e-65 & 1.826e-61 & 10 & n/a (diagnostic) \\
+small & CDQ & |g\_hat|/|g*| & 450 & 1.182 & 1.554 & -0.3722 & -23.94 & 1.819e-72 & 3.891e-73 & 5.456e-72 & 8 & n/a (diagnostic) \\
+large & CDQ & Bad-tier weight share & 450 & 0.2825 & 0.2824 & 0.0001524 & 0.05397 & 0.2769 & 0.2219 & 0.2769 & 2980 & n/a (diagnostic) \\
+medium & CDQ & Bad-tier weight share & 450 & 0.293 & 0.2927 & 0.0002854 & 0.09748 & 0.07224 & 0.1615 & 0.1084 & 1088 & n/a (diagnostic) \\
+small & CDQ & Bad-tier weight share & 450 & 0.2904 & 0.2898 & 0.0006171 & 0.2129 & 2.704e-05 & 0.0001801 & 8.111e-05 & 197 & n/a (diagnostic) \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,11 @@
+# Ignore duplicate screen preview renders (keeps 300DPI and vector PDF)
+**/figures/preview_130dpi/
+**/figures/notebook_inline/
+
+# Ignore duplicate expanded archives to prevent pushing huge files
+**/outputs/archives/
+
+# Python cache & notebook checkpoints
+**/__pycache__/
+*.py[cod]
+**/.ipynb_checkpoints/

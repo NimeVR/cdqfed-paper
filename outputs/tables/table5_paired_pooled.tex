@@ -1,0 +1,81 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Paired comparison of CD-QFed against every baseline, pooled per scale (paired t-test, Benjamini-Hochberg q within each metric).}\label{tab:table5_paired_pooled}
+\begin{tabular}{lllllllllllll}
+\toprule
+scale & baseline & metric & n\_pairs & mean\_method & mean\_baseline & gap & rel\_change\_pct & p & p\_wilcoxon & q\_BH & n\_80pow & verdict \\
+\midrule
+large & base & accuracy & 450 & 0.3754 & 0.369 & 0.006446 & 1.747 & 0.01146 & 0.009944 & 0.02751 & 549 & GOOD (significant) \\
+medium & base & accuracy & 450 & 0.4066 & 0.4002 & 0.006449 & 1.612 & 0.004104 & 0.00164 & 0.01407 & 425 & GOOD (significant) \\
+small & base & accuracy & 450 & 0.3996 & 0.3926 & 0.007017 & 1.787 & 0.01335 & 0.001084 & 0.02776 & 573 & GOOD (significant) \\
+large & base & client-drift E\_drift & 450 & 0.01288 & 0.02069 & -0.007807 & -37.74 & 8.862e-29 & 1.272e-55 & 1.418e-28 & 25 & GOOD (significant) \\
+medium & base & client-drift E\_drift & 450 & 0.01319 & 0.02049 & -0.007295 & -35.61 & 9.477e-35 & 9.32e-57 & 3.249e-34 & 20 & GOOD (significant) \\
+small & base & client-drift E\_drift & 450 & 0.01225 & 0.0238 & -0.01155 & -48.52 & 2.491e-23 & 1.103e-57 & 2.594e-23 & 32 & GOOD (significant) \\
+large & base & drift alignment S\_CDA & 450 & 0.3121 & 0.24 & 0.07208 & 30.03 & 1.286e-79 & 5.009e-65 & 4.408e-79 & 7 & GOOD (significant) \\
+medium & base & drift alignment S\_CDA & 450 & 0.3258 & 0.2501 & 0.07562 & 30.23 & 2.73e-81 & 4.822e-68 & 1.638e-80 & 7 & GOOD (significant) \\
+small & base & drift alignment S\_CDA & 450 & 0.351 & 0.2809 & 0.07003 & 24.93 & 1.857e-64 & 5.749e-61 & 2.622e-64 & 9 & GOOD (significant) \\
+large & JEQFL & accuracy & 450 & 0.3754 & 0.3701 & 0.005356 & 1.447 & 0.03199 & 0.002756 & 0.05119 & 764 & good trend (n.s.) \\
+medium & JEQFL & accuracy & 450 & 0.4066 & 0.4003 & 0.00632 & 1.579 & 0.008535 & 0.0008863 & 0.02276 & 507 & GOOD (significant) \\
+small & JEQFL & accuracy & 450 & 0.3996 & 0.3994 & 0.0002309 & 0.0578 & 0.9369 & 0.3804 & 0.9369 & 5.636e+05 & good trend (n.s.) \\
+large & JEQFL & client-drift E\_drift & 450 & 0.01288 & 0.02048 & -0.007601 & -37.11 & 2.278e-28 & 5.107e-54 & 3.417e-28 & 26 & GOOD (significant) \\
+medium & JEQFL & client-drift E\_drift & 450 & 0.01319 & 0.02062 & -0.007432 & -36.04 & 4.788e-34 & 4.806e-59 & 1.436e-33 & 21 & GOOD (significant) \\
+small & JEQFL & client-drift E\_drift & 450 & 0.01225 & 0.02393 & -0.01168 & -48.8 & 2.866e-25 & 3.643e-59 & 3.44e-25 & 29 & GOOD (significant) \\
+large & JEQFL & drift alignment S\_CDA & 450 & 0.3121 & 0.2453 & 0.06675 & 27.21 & 5.278e-67 & 1.555e-57 & 7.916e-67 & 9 & GOOD (significant) \\
+medium & JEQFL & drift alignment S\_CDA & 450 & 0.3258 & 0.2509 & 0.07485 & 29.83 & 1.273e-78 & 8.064e-65 & 3.395e-78 & 7 & GOOD (significant) \\
+small & JEQFL & drift alignment S\_CDA & 450 & 0.351 & 0.2792 & 0.07171 & 25.68 & 1.409e-71 & 9.93e-64 & 2.819e-71 & 8 & GOOD (significant) \\
+large & M4a & accuracy & 450 & 0.3754 & 0.3723 & 0.003111 & 0.8356 & 0.2206 & 0.3245 & 0.2786 & 2347 & good trend (n.s.) \\
+medium & M4a & accuracy & 450 & 0.4066 & 0.4006 & 0.006019 & 1.502 & 0.007459 & 0.0009252 & 0.02238 & 489 & GOOD (significant) \\
+small & M4a & accuracy & 450 & 0.3996 & 0.3953 & 0.00432 & 1.093 & 0.1218 & 0.01879 & 0.1719 & 1470 & good trend (n.s.) \\
+large & M4a & client-drift E\_drift & 450 & 0.01288 & 0.02183 & -0.008946 & -40.99 & 1.287e-33 & 2.882e-58 & 3.431e-33 & 21 & GOOD (significant) \\
+medium & M4a & client-drift E\_drift & 450 & 0.01319 & 0.02154 & -0.008349 & -38.76 & 1.346e-37 & 7.919e-60 & 1.077e-36 & 18 & GOOD (significant) \\
+small & M4a & client-drift E\_drift & 450 & 0.01225 & 0.02473 & -0.01248 & -50.46 & 3.981e-26 & 9.734e-61 & 5.028e-26 & 28 & GOOD (significant) \\
+large & M4a & drift alignment S\_CDA & 450 & 0.3121 & 0.2359 & 0.07617 & 32.29 & 2.115e-85 & 1.222e-67 & 5.075e-84 & 6 & GOOD (significant) \\
+medium & M4a & drift alignment S\_CDA & 450 & 0.3258 & 0.2451 & 0.08068 & 32.92 & 2.93e-83 & 2.089e-69 & 3.516e-82 & 7 & GOOD (significant) \\
+small & M4a & drift alignment S\_CDA & 450 & 0.351 & 0.2771 & 0.07381 & 26.63 & 3.59e-67 & 4.556e-64 & 5.743e-67 & 9 & GOOD (significant) \\
+large & M4ab & accuracy & 450 & 0.3754 & 0.3745 & 0.0009358 & 0.2499 & 0.7042 & 0.94 & 0.7348 & 2.446e+04 & good trend (n.s.) \\
+medium & M4ab & accuracy & 450 & 0.4066 & 0.4013 & 0.005342 & 1.331 & 0.01581 & 0.002968 & 0.02829 & 602 & GOOD (significant) \\
+small & M4ab & accuracy & 450 & 0.3996 & 0.3971 & 0.002558 & 0.6442 & 0.3774 & 0.09164 & 0.4313 & 4525 & good trend (n.s.) \\
+large & M4ab & client-drift E\_drift & 450 & 0.01288 & 0.02209 & -0.009206 & -41.68 & 6.302e-32 & 9.379e-55 & 1.26e-31 & 22 & GOOD (significant) \\
+medium & M4ab & client-drift E\_drift & 450 & 0.01319 & 0.02203 & -0.008839 & -40.12 & 3.757e-37 & 4.694e-59 & 2.254e-36 & 19 & GOOD (significant) \\
+small & M4ab & client-drift E\_drift & 450 & 0.01225 & 0.02526 & -0.01301 & -51.49 & 1.881e-26 & 1.213e-59 & 2.655e-26 & 28 & GOOD (significant) \\
+large & M4ab & drift alignment S\_CDA & 450 & 0.3121 & 0.2435 & 0.06858 & 28.16 & 1.187e-69 & 4.781e-60 & 2.036e-69 & 8 & GOOD (significant) \\
+medium & M4ab & drift alignment S\_CDA & 450 & 0.3258 & 0.2483 & 0.07746 & 31.2 & 1.064e-76 & 7.186e-68 & 2.321e-76 & 7 & GOOD (significant) \\
+small & M4ab & drift alignment S\_CDA & 450 & 0.351 & 0.2779 & 0.07301 & 26.27 & 2.007e-64 & 3.787e-63 & 2.676e-64 & 9 & GOOD (significant) \\
+large & M5b & accuracy & 450 & 0.3754 & 0.3598 & 0.01562 & 4.34 & 2.812e-13 & 2.002e-12 & 6.748e-12 & 63 & GOOD (significant) \\
+medium & M5b & accuracy & 450 & 0.4066 & 0.3948 & 0.01186 & 3.005 & 2.231e-07 & 3.08e-08 & 1.785e-06 & 128 & GOOD (significant) \\
+small & M5b & accuracy & 450 & 0.3996 & 0.384 & 0.01567 & 4.08 & 7.796e-11 & 3.702e-11 & 9.355e-10 & 80 & GOOD (significant) \\
+large & M5b & client-drift E\_drift & 450 & 0.01288 & 0.0188 & -0.005919 & -31.48 & 2.754e-26 & 4.516e-44 & 3.672e-26 & 28 & GOOD (significant) \\
+medium & M5b & client-drift E\_drift & 450 & 0.01319 & 0.01843 & -0.005234 & -28.41 & 1.094e-23 & 4.513e-42 & 1.193e-23 & 32 & GOOD (significant) \\
+small & M5b & client-drift E\_drift & 450 & 0.01225 & 0.0197 & -0.007448 & -37.81 & 2.204e-33 & 5.149e-56 & 5.29e-33 & 21 & GOOD (significant) \\
+large & M5b & drift alignment S\_CDA & 450 & 0.3121 & 0.3164 & -0.004312 & -1.363 & 0.1023 & 0.004014 & 0.1023 & 1318 & bad trend (n.s.) \\
+medium & M5b & drift alignment S\_CDA & 450 & 0.3258 & 0.3202 & 0.005545 & 1.732 & 0.0212 & 0.2474 & 0.02212 & 661 & GOOD (significant) \\
+small & M5b & drift alignment S\_CDA & 450 & 0.351 & 0.3408 & 0.0102 & 2.995 & 0.000221 & 0.008412 & 0.0002411 & 255 & GOOD (significant) \\
+large & M3 & accuracy & 450 & 0.3754 & 0.3694 & 0.006035 & 1.634 & 0.0165 & 0.01283 & 0.02829 & 610 & GOOD (significant) \\
+medium & M3 & accuracy & 450 & 0.4066 & 0.3999 & 0.006681 & 1.671 & 0.002852 & 0.0009559 & 0.01204 & 393 & GOOD (significant) \\
+small & M3 & accuracy & 450 & 0.3996 & 0.3927 & 0.00698 & 1.778 & 0.01388 & 0.0007111 & 0.02776 & 579 & GOOD (significant) \\
+large & M3 & client-drift E\_drift & 450 & 0.01288 & 0.02051 & -0.007624 & -37.18 & 6.584e-30 & 1.163e-54 & 1.216e-29 & 24 & GOOD (significant) \\
+medium & M3 & client-drift E\_drift & 450 & 0.01319 & 0.02036 & -0.007166 & -35.2 & 1.95e-35 & 1.134e-56 & 7.8e-35 & 20 & GOOD (significant) \\
+small & M3 & client-drift E\_drift & 450 & 0.01225 & 0.02361 & -0.01136 & -48.1 & 2.594e-23 & 1.592e-57 & 2.594e-23 & 32 & GOOD (significant) \\
+large & M3 & drift alignment S\_CDA & 450 & 0.3121 & 0.2412 & 0.07087 & 29.38 & 1.794e-78 & 1.363e-64 & 4.305e-78 & 7 & GOOD (significant) \\
+medium & M3 & drift alignment S\_CDA & 450 & 0.3258 & 0.2508 & 0.07497 & 29.9 & 2.041e-80 & 1.352e-67 & 8.165e-80 & 7 & GOOD (significant) \\
+small & M3 & drift alignment S\_CDA & 450 & 0.351 & 0.2815 & 0.06945 & 24.67 & 3.1e-64 & 7.482e-61 & 3.916e-64 & 9 & GOOD (significant) \\
+large & M2 & accuracy & 450 & 0.3754 & 0.3745 & 0.0009642 & 0.2575 & 0.6875 & 0.535 & 0.7348 & 2.18e+04 & good trend (n.s.) \\
+medium & M2 & accuracy & 450 & 0.4066 & 0.3992 & 0.007433 & 1.862 & 0.001162 & 0.0005438 & 0.006973 & 331 & GOOD (significant) \\
+small & M2 & accuracy & 450 & 0.3996 & 0.3963 & 0.003377 & 0.8521 & 0.2186 & 0.004673 & 0.2786 & 2327 & good trend (n.s.) \\
+large & M2 & client-drift E\_drift & 450 & 0.01288 & 0.02025 & -0.007372 & -36.4 & 1.222e-29 & 1.601e-57 & 2.095e-29 & 24 & GOOD (significant) \\
+medium & M2 & client-drift E\_drift & 450 & 0.01319 & 0.02052 & -0.007333 & -35.73 & 2.623e-36 & 1.374e-59 & 1.259e-35 & 19 & GOOD (significant) \\
+small & M2 & client-drift E\_drift & 450 & 0.01225 & 0.02371 & -0.01146 & -48.32 & 1.251e-24 & 6.101e-62 & 1.43e-24 & 30 & GOOD (significant) \\
+large & M2 & drift alignment S\_CDA & 450 & 0.3121 & 0.2477 & 0.06439 & 26 & 1.054e-78 & 2.016e-62 & 3.162e-78 & 7 & GOOD (significant) \\
+medium & M2 & drift alignment S\_CDA & 450 & 0.3258 & 0.2567 & 0.06907 & 26.91 & 3.61e-81 & 1.726e-66 & 1.733e-80 & 7 & GOOD (significant) \\
+small & M2 & drift alignment S\_CDA & 450 & 0.351 & 0.2834 & 0.0676 & 23.86 & 6.055e-71 & 1.256e-62 & 1.118e-70 & 8 & GOOD (significant) \\
+large & CDQ & accuracy & 450 & 0.3754 & 0.3685 & 0.006881 & 1.867 & 0.00301 & 5.572e-05 & 0.01204 & 397 & GOOD (significant) \\
+medium & CDQ & accuracy & 450 & 0.4066 & 0.4025 & 0.004126 & 1.025 & 0.1079 & 0.2377 & 0.1618 & 1362 & good trend (n.s.) \\
+small & CDQ & accuracy & 450 & 0.3996 & 0.3974 & 0.002279 & 0.5735 & 0.3577 & 0.65 & 0.4292 & 4166 & good trend (n.s.) \\
+large & CDQ & client-drift E\_drift & 450 & 0.01288 & 0.02835 & -0.01547 & -54.56 & 3.085e-32 & 4.096e-60 & 6.732e-32 & 22 & GOOD (significant) \\
+medium & CDQ & client-drift E\_drift & 450 & 0.01319 & 0.02972 & -0.01653 & -55.62 & 6.611e-40 & 1.436e-71 & 1.587e-38 & 17 & GOOD (significant) \\
+small & CDQ & client-drift E\_drift & 450 & 0.01225 & 0.03411 & -0.02186 & -64.08 & 8.604e-39 & 1.98e-74 & 1.032e-37 & 18 & GOOD (significant) \\
+large & CDQ & drift alignment S\_CDA & 450 & 0.3121 & 0.2839 & 0.02817 & 9.923 & 5.04e-33 & 1.379e-30 & 5.761e-33 & 21 & GOOD (significant) \\
+medium & CDQ & drift alignment S\_CDA & 450 & 0.3258 & 0.2879 & 0.03787 & 13.16 & 2.639e-57 & 8.567e-48 & 3.167e-57 & 11 & GOOD (significant) \\
+small & CDQ & drift alignment S\_CDA & 450 & 0.351 & 0.2989 & 0.05211 & 17.44 & 1.709e-82 & 9.075e-59 & 1.368e-81 & 7 & GOOD (significant) \\
+\bottomrule
+\end{tabular}
+\end{table}

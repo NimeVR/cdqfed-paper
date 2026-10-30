@@ -1,0 +1,54 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Per-innovation ablation anchored on CDQ.}\label{tab:table11_innovation_ablation_cdq}
+\begin{tabular}{llllllllllll}
+\toprule
+scale & removed & metric & n\_pairs & full & ablated & contribution & sd & t & p & q\_BH & innovation\_helps \\
+\midrule
+large & I1 & accuracy & 60 & 0.3619 & 0.3557 & 0.006213 & 0.04563 & 1.055 & 0.2958 & 0.4034 & good trend (n.s.) \\
+medium & I1 & accuracy & 60 & 0.3847 & 0.3795 & 0.00525 & 0.05222 & 0.7787 & 0.4393 & 0.5202 & good trend (n.s.) \\
+small & I1 & accuracy & 60 & 0.3675 & 0.368 & -0.0005648 & 0.0548 & -0.07984 & 0.9366 & 0.9579 & bad trend (n.s.) \\
+large & I1 & client-drift E\_drift & 60 & 0.04015 & 0.04193 & -0.001789 & 0.01526 & -0.9083 & 0.3674 & 0.4724 & good trend (n.s.) \\
+medium & I1 & client-drift E\_drift & 60 & 0.04493 & 0.04187 & 0.00307 & 0.01855 & 1.282 & 0.2048 & 0.3178 & bad trend (n.s.) \\
+small & I1 & client-drift E\_drift & 60 & 0.05223 & 0.04804 & 0.004193 & 0.03005 & 1.081 & 0.2842 & 0.3997 & bad trend (n.s.) \\
+large & I1 & drift alignment S\_CDA & 60 & 0.2585 & 0.2226 & 0.03588 & 0.03796 & 7.322 & 7.698e-10 & 3.464e-08 & GOOD (significant) \\
+medium & I1 & drift alignment S\_CDA & 60 & 0.2772 & 0.2578 & 0.01944 & 0.04386 & 3.433 & 0.001097 & 0.002743 & GOOD (significant) \\
+small & I1 & drift alignment S\_CDA & 60 & 0.2965 & 0.2813 & 0.01523 & 0.04104 & 2.874 & 0.005621 & 0.0115 & GOOD (significant) \\
+large & I2 & accuracy & 60 & 0.3619 & 0.3587 & 0.003278 & 0.03509 & 0.7235 & 0.4723 & 0.5439 & good trend (n.s.) \\
+medium & I2 & accuracy & 60 & 0.3847 & 0.3756 & 0.009083 & 0.05791 & 1.215 & 0.2292 & 0.3438 & good trend (n.s.) \\
+small & I2 & accuracy & 60 & 0.3675 & 0.3699 & -0.002463 & 0.05961 & -0.32 & 0.7501 & 0.8036 & bad trend (n.s.) \\
+large & I2 & client-drift E\_drift & 60 & 0.04015 & 0.03132 & 0.00883 & 0.01664 & 4.111 & 0.0001236 & 0.0003708 & BAD (significant) \\
+medium & I2 & client-drift E\_drift & 60 & 0.04493 & 0.03765 & 0.007286 & 0.01239 & 4.555 & 2.684e-05 & 0.0001208 & BAD (significant) \\
+small & I2 & client-drift E\_drift & 60 & 0.05223 & 0.03592 & 0.01631 & 0.03096 & 4.082 & 0.0001363 & 0.0003834 & BAD (significant) \\
+large & I2 & drift alignment S\_CDA & 60 & 0.2585 & 0.275 & -0.01656 & 0.04451 & -2.882 & 0.005496 & 0.0115 & BAD (significant) \\
+medium & I2 & drift alignment S\_CDA & 60 & 0.2772 & 0.2848 & -0.007595 & 0.04345 & -1.354 & 0.1809 & 0.2907 & bad trend (n.s.) \\
+small & I2 & drift alignment S\_CDA & 60 & 0.2965 & 0.3123 & -0.01581 & 0.05748 & -2.131 & 0.0373 & 0.06456 & bad trend (n.s.) \\
+large & I3a & accuracy & 60 & 0.3619 & 0.3664 & -0.004472 & 0.04241 & -0.8168 & 0.4173 & 0.5075 & bad trend (n.s.) \\
+medium & I3a & accuracy & 60 & 0.3847 & 0.3917 & -0.006954 & 0.05208 & -1.034 & 0.3053 & 0.404 & bad trend (n.s.) \\
+small & I3a & accuracy & 60 & 0.3675 & 0.3675 & -2.778e-05 & 0.04987 & -0.004315 & 0.9966 & 0.9966 & bad trend (n.s.) \\
+large & I3a & client-drift E\_drift & 60 & 0.04015 & 0.02862 & 0.01152 & 0.01871 & 4.77 & 1.251e-05 & 6.578e-05 & BAD (significant) \\
+medium & I3a & client-drift E\_drift & 60 & 0.04493 & 0.02759 & 0.01734 & 0.02801 & 4.796 & 1.137e-05 & 6.578e-05 & BAD (significant) \\
+small & I3a & client-drift E\_drift & 60 & 0.05223 & 0.03631 & 0.01592 & 0.03845 & 3.207 & 0.002169 & 0.00488 & BAD (significant) \\
+large & I3a & drift alignment S\_CDA & 60 & 0.2585 & 0.2932 & -0.03477 & 0.04111 & -6.551 & 1.552e-08 & 3.492e-07 & BAD (significant) \\
+medium & I3a & drift alignment S\_CDA & 60 & 0.2772 & 0.2996 & -0.02239 & 0.03647 & -4.756 & 1.316e-05 & 6.578e-05 & BAD (significant) \\
+small & I3a & drift alignment S\_CDA & 60 & 0.2965 & 0.3114 & -0.01494 & 0.04545 & -2.545 & 0.01355 & 0.02651 & BAD (significant) \\
+large & I3b & accuracy & 60 & 0.3619 & 0.3602 & 0.001741 & 0.04023 & 0.3352 & 0.7387 & 0.8036 & good trend (n.s.) \\
+medium & I3b & accuracy & 60 & 0.3847 & 0.3953 & -0.01062 & 0.04097 & -2.008 & 0.04921 & 0.08202 & bad trend (n.s.) \\
+small & I3b & accuracy & 60 & 0.3675 & 0.3823 & -0.01481 & 0.04981 & -2.304 & 0.02477 & 0.04459 & BAD (significant) \\
+large & I3b & client-drift E\_drift & 60 & 0.04015 & 0.02886 & 0.01129 & 0.01953 & 4.478 & 3.505e-05 & 0.0001434 & BAD (significant) \\
+medium & I3b & client-drift E\_drift & 60 & 0.04493 & 0.02919 & 0.01575 & 0.02278 & 5.356 & 1.47e-06 & 1.653e-05 & BAD (significant) \\
+small & I3b & client-drift E\_drift & 60 & 0.05223 & 0.0331 & 0.01914 & 0.03542 & 4.185 & 9.619e-05 & 0.0003092 & BAD (significant) \\
+large & I3b & drift alignment S\_CDA & 60 & 0.2585 & 0.2916 & -0.0331 & 0.06046 & -4.241 & 7.952e-05 & 0.0002753 & BAD (significant) \\
+medium & I3b & drift alignment S\_CDA & 60 & 0.2772 & 0.312 & -0.03471 & 0.05233 & -5.138 & 3.292e-06 & 2.469e-05 & BAD (significant) \\
+small & I3b & drift alignment S\_CDA & 60 & 0.2965 & 0.3292 & -0.03272 & 0.06993 & -3.624 & 0.0006049 & 0.001601 & BAD (significant) \\
+large & I4 & accuracy & 60 & 0.3619 & 0.3574 & 0.004574 & 0.05025 & 0.7051 & 0.4835 & 0.5439 & good trend (n.s.) \\
+medium & I4 & accuracy & 60 & 0.3847 & 0.3896 & -0.004926 & 0.04634 & -0.8234 & 0.4136 & 0.5075 & bad trend (n.s.) \\
+small & I4 & accuracy & 60 & 0.3675 & 0.3667 & 0.0007593 & 0.06408 & 0.09177 & 0.9272 & 0.9579 & good trend (n.s.) \\
+large & I4 & client-drift E\_drift & 60 & 0.04015 & 0.03841 & 0.001732 & 0.01177 & 1.14 & 0.2591 & 0.3761 & bad trend (n.s.) \\
+medium & I4 & client-drift E\_drift & 60 & 0.04493 & 0.03945 & 0.005484 & 0.01253 & 3.39 & 0.001253 & 0.002967 & BAD (significant) \\
+small & I4 & client-drift E\_drift & 60 & 0.05223 & 0.04367 & 0.008559 & 0.02852 & 2.325 & 0.02354 & 0.04413 & BAD (significant) \\
+large & I4 & drift alignment S\_CDA & 60 & 0.2585 & 0.2819 & -0.02341 & 0.04207 & -4.311 & 6.268e-05 & 0.0002351 & BAD (significant) \\
+medium & I4 & drift alignment S\_CDA & 60 & 0.2772 & 0.3065 & -0.02929 & 0.0389 & -5.833 & 2.446e-07 & 3.67e-06 & BAD (significant) \\
+small & I4 & drift alignment S\_CDA & 60 & 0.2965 & 0.3297 & -0.03317 & 0.04944 & -5.196 & 2.658e-06 & 2.392e-05 & BAD (significant) \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,177 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Paired comparison on the diagnostic metrics.}\label{tab:table13_diagnostics}
+\begin{tabular}{lllllllllllll}
+\toprule
+scale & baseline & metric & n\_pairs & mean\_method & mean\_baseline & gap & rel\_change\_pct & p & p\_wilcoxon & q\_BH & n\_80pow & verdict \\
+\midrule
+large & base & accuracy & 450 & 0.3754 & 0.369 & 0.006446 & 1.747 & 0.01146 & 0.009944 & 0.02751 & 549 & GOOD (significant) \\
+medium & base & accuracy & 450 & 0.4066 & 0.4002 & 0.006449 & 1.612 & 0.004104 & 0.00164 & 0.01407 & 425 & GOOD (significant) \\
+small & base & accuracy & 450 & 0.3996 & 0.3926 & 0.007017 & 1.787 & 0.01335 & 0.001084 & 0.02776 & 573 & GOOD (significant) \\
+large & base & client-drift E\_drift & 450 & 0.01288 & 0.02069 & -0.007807 & -37.74 & 8.862e-29 & 1.272e-55 & 1.418e-28 & 25 & GOOD (significant) \\
+medium & base & client-drift E\_drift & 450 & 0.01319 & 0.02049 & -0.007295 & -35.61 & 9.477e-35 & 9.32e-57 & 3.249e-34 & 20 & GOOD (significant) \\
+small & base & client-drift E\_drift & 450 & 0.01225 & 0.0238 & -0.01155 & -48.52 & 2.491e-23 & 1.103e-57 & 2.594e-23 & 32 & GOOD (significant) \\
+large & base & drift alignment S\_CDA & 450 & 0.3121 & 0.24 & 0.07208 & 30.03 & 1.286e-79 & 5.009e-65 & 4.408e-79 & 7 & GOOD (significant) \\
+medium & base & drift alignment S\_CDA & 450 & 0.3258 & 0.2501 & 0.07562 & 30.23 & 2.73e-81 & 4.822e-68 & 1.638e-80 & 7 & GOOD (significant) \\
+small & base & drift alignment S\_CDA & 450 & 0.351 & 0.2809 & 0.07003 & 24.93 & 1.857e-64 & 5.749e-61 & 2.622e-64 & 9 & GOOD (significant) \\
+large & base & reconstruction error & 450 & 0.07855 & 0.1084 & -0.02988 & -27.56 & 5.634e-61 & 6.943e-71 & 1.127e-60 & 10 & GOOD (significant) \\
+medium & base & reconstruction error & 450 & 0.08095 & 0.1108 & -0.02988 & -26.96 & 9.102e-70 & 8.759e-72 & 5.461e-69 & 8 & GOOD (significant) \\
+small & base & reconstruction error & 450 & 0.08383 & 0.1189 & -0.03508 & -29.5 & 1.037e-48 & 1.369e-70 & 1.245e-48 & 13 & GOOD (significant) \\
+large & base & active clients & 450 & 9.452 & 9.411 & 0.04118 & 0.4376 & 7.034e-22 & 1.214e-22 & 8.039e-22 & 35 & GOOD (significant) \\
+medium & base & active clients & 450 & 9.471 & 9.411 & 0.06018 & 0.6395 & 4.213e-57 & 2.966e-46 & 1.011e-56 & 11 & GOOD (significant) \\
+small & base & active clients & 450 & 9.468 & 9.411 & 0.05723 & 0.6082 & 1.825e-47 & 1.333e-40 & 3.129e-47 & 14 & GOOD (significant) \\
+large & base & |g\_hat|/|g*| & 450 & 1.297 & 1.506 & -0.2096 & -13.91 & 1.101e-19 & 2.201e-15 & 1.322e-19 & 39 & n/a (diagnostic) \\
+medium & base & |g\_hat|/|g*| & 450 & 1.253 & 1.459 & -0.2059 & -14.12 & 2.239e-24 & 9.095e-17 & 3.583e-24 & 31 & n/a (diagnostic) \\
+small & base & |g\_hat|/|g*| & 450 & 1.182 & 1.384 & -0.2015 & -14.56 & 4.463e-28 & 2.298e-21 & 9.738e-28 & 26 & n/a (diagnostic) \\
+large & base & Bad-tier weight share & 450 & 0.2825 & 0.3347 & -0.0522 & -15.59 & 3.913e-85 & 4.419e-53 & 1.043e-84 & 6 & n/a (diagnostic) \\
+medium & base & Bad-tier weight share & 450 & 0.293 & 0.3347 & -0.04169 & -12.46 & 1.253e-86 & 1.879e-58 & 5.012e-86 & 6 & n/a (diagnostic) \\
+small & base & Bad-tier weight share & 450 & 0.2904 & 0.3347 & -0.04427 & -13.23 & 6.87e-81 & 1.589e-52 & 1.178e-80 & 7 & n/a (diagnostic) \\
+large & JEQFL & accuracy & 450 & 0.3754 & 0.3701 & 0.005356 & 1.447 & 0.03199 & 0.002756 & 0.05119 & 764 & good trend (n.s.) \\
+medium & JEQFL & accuracy & 450 & 0.4066 & 0.4003 & 0.00632 & 1.579 & 0.008535 & 0.0008863 & 0.02276 & 507 & GOOD (significant) \\
+small & JEQFL & accuracy & 450 & 0.3996 & 0.3994 & 0.0002309 & 0.0578 & 0.9369 & 0.3804 & 0.9369 & 5.636e+05 & good trend (n.s.) \\
+large & JEQFL & client-drift E\_drift & 450 & 0.01288 & 0.02048 & -0.007601 & -37.11 & 2.278e-28 & 5.107e-54 & 3.417e-28 & 26 & GOOD (significant) \\
+medium & JEQFL & client-drift E\_drift & 450 & 0.01319 & 0.02062 & -0.007432 & -36.04 & 4.788e-34 & 4.806e-59 & 1.436e-33 & 21 & GOOD (significant) \\
+small & JEQFL & client-drift E\_drift & 450 & 0.01225 & 0.02393 & -0.01168 & -48.8 & 2.866e-25 & 3.643e-59 & 3.44e-25 & 29 & GOOD (significant) \\
+large & JEQFL & drift alignment S\_CDA & 450 & 0.3121 & 0.2453 & 0.06675 & 27.21 & 5.278e-67 & 1.555e-57 & 7.916e-67 & 9 & GOOD (significant) \\
+medium & JEQFL & drift alignment S\_CDA & 450 & 0.3258 & 0.2509 & 0.07485 & 29.83 & 1.273e-78 & 8.064e-65 & 3.395e-78 & 7 & GOOD (significant) \\
+small & JEQFL & drift alignment S\_CDA & 450 & 0.351 & 0.2792 & 0.07171 & 25.68 & 1.409e-71 & 9.93e-64 & 2.819e-71 & 8 & GOOD (significant) \\
+large & JEQFL & reconstruction error & 450 & 0.07855 & 0.1077 & -0.02918 & -27.08 & 7.169e-59 & 3.353e-69 & 1.229e-58 & 10 & GOOD (significant) \\
+medium & JEQFL & reconstruction error & 450 & 0.08095 & 0.1108 & -0.02983 & -26.93 & 1.278e-66 & 7.504e-71 & 6.135e-66 & 9 & GOOD (significant) \\
+small & JEQFL & reconstruction error & 450 & 0.08383 & 0.1196 & -0.03575 & -29.9 & 3.24e-51 & 2.84e-71 & 4.575e-51 & 12 & GOOD (significant) \\
+large & JEQFL & active clients & 450 & 9.452 & 9.523 & -0.07128 & -0.7485 & 2.022e-44 & 1.854e-43 & 3.236e-44 & 15 & BAD (significant) \\
+medium & JEQFL & active clients & 450 & 9.471 & 9.524 & -0.0533 & -0.5596 & 2.516e-43 & 1.444e-40 & 3.773e-43 & 15 & BAD (significant) \\
+small & JEQFL & active clients & 450 & 9.468 & 9.522 & -0.05403 & -0.5674 & 6.176e-39 & 1.892e-38 & 8.719e-39 & 18 & BAD (significant) \\
+large & JEQFL & |g\_hat|/|g*| & 450 & 1.297 & 1.492 & -0.1951 & -13.08 & 1.948e-18 & 5.208e-13 & 2.033e-18 & 43 & n/a (diagnostic) \\
+medium & JEQFL & |g\_hat|/|g*| & 450 & 1.253 & 1.432 & -0.1797 & -12.54 & 8.235e-20 & 7.152e-12 & 1.04e-19 & 39 & n/a (diagnostic) \\
+small & JEQFL & |g\_hat|/|g*| & 450 & 1.182 & 1.389 & -0.2067 & -14.88 & 1.025e-29 & 1.954e-22 & 2.46e-29 & 24 & n/a (diagnostic) \\
+large & JEQFL & Bad-tier weight share & 450 & 0.2825 & 0.3341 & -0.05157 & -15.44 & 1.723e-83 & 3.319e-48 & 3.758e-83 & 7 & n/a (diagnostic) \\
+medium & JEQFL & Bad-tier weight share & 450 & 0.293 & 0.3338 & -0.04081 & -12.22 & 1.06e-83 & 2.101e-53 & 2.544e-83 & 7 & n/a (diagnostic) \\
+small & JEQFL & Bad-tier weight share & 450 & 0.2904 & 0.3337 & -0.0433 & -12.97 & 3.46e-78 & 1.073e-46 & 5.536e-78 & 7 & n/a (diagnostic) \\
+large & M4a & accuracy & 450 & 0.3754 & 0.3723 & 0.003111 & 0.8356 & 0.2206 & 0.3245 & 0.2786 & 2347 & good trend (n.s.) \\
+medium & M4a & accuracy & 450 & 0.4066 & 0.4006 & 0.006019 & 1.502 & 0.007459 & 0.0009252 & 0.02238 & 489 & GOOD (significant) \\
+small & M4a & accuracy & 450 & 0.3996 & 0.3953 & 0.00432 & 1.093 & 0.1218 & 0.01879 & 0.1719 & 1470 & good trend (n.s.) \\
+large & M4a & client-drift E\_drift & 450 & 0.01288 & 0.02183 & -0.008946 & -40.99 & 1.287e-33 & 2.882e-58 & 3.431e-33 & 21 & GOOD (significant) \\
+medium & M4a & client-drift E\_drift & 450 & 0.01319 & 0.02154 & -0.008349 & -38.76 & 1.346e-37 & 7.919e-60 & 1.077e-36 & 18 & GOOD (significant) \\
+small & M4a & client-drift E\_drift & 450 & 0.01225 & 0.02473 & -0.01248 & -50.46 & 3.981e-26 & 9.734e-61 & 5.028e-26 & 28 & GOOD (significant) \\
+large & M4a & drift alignment S\_CDA & 450 & 0.3121 & 0.2359 & 0.07617 & 32.29 & 2.115e-85 & 1.222e-67 & 5.075e-84 & 6 & GOOD (significant) \\
+medium & M4a & drift alignment S\_CDA & 450 & 0.3258 & 0.2451 & 0.08068 & 32.92 & 2.93e-83 & 2.089e-69 & 3.516e-82 & 7 & GOOD (significant) \\
+small & M4a & drift alignment S\_CDA & 450 & 0.351 & 0.2771 & 0.07381 & 26.63 & 3.59e-67 & 4.556e-64 & 5.743e-67 & 9 & GOOD (significant) \\
+large & M4a & reconstruction error & 450 & 0.07855 & 0.1117 & -0.03318 & -29.69 & 1.084e-65 & 3.381e-72 & 4.336e-65 & 9 & GOOD (significant) \\
+medium & M4a & reconstruction error & 450 & 0.08095 & 0.1137 & -0.03279 & -28.83 & 2.496e-70 & 7.405e-73 & 2.995e-69 & 8 & GOOD (significant) \\
+small & M4a & reconstruction error & 450 & 0.08383 & 0.1216 & -0.03772 & -31.03 & 4.996e-52 & 3.146e-72 & 7.494e-52 & 12 & GOOD (significant) \\
+large & M4a & active clients & 450 & 9.452 & 9.411 & 0.04118 & 0.4376 & 7.034e-22 & 1.214e-22 & 8.039e-22 & 35 & GOOD (significant) \\
+medium & M4a & active clients & 450 & 9.471 & 9.411 & 0.06018 & 0.6395 & 4.213e-57 & 2.966e-46 & 1.011e-56 & 11 & GOOD (significant) \\
+small & M4a & active clients & 450 & 9.468 & 9.411 & 0.05723 & 0.6082 & 1.825e-47 & 1.333e-40 & 3.129e-47 & 14 & GOOD (significant) \\
+large & M4a & |g\_hat|/|g*| & 450 & 1.297 & 1.503 & -0.2068 & -13.75 & 6.871e-21 & 1.526e-16 & 9.162e-21 & 37 & n/a (diagnostic) \\
+medium & M4a & |g\_hat|/|g*| & 450 & 1.253 & 1.444 & -0.1907 & -13.21 & 1.809e-22 & 6.273e-15 & 2.554e-22 & 34 & n/a (diagnostic) \\
+small & M4a & |g\_hat|/|g*| & 450 & 1.182 & 1.378 & -0.1959 & -14.22 & 7.505e-28 & 9.07e-21 & 1.501e-27 & 26 & n/a (diagnostic) \\
+large & M4a & Bad-tier weight share & 450 & 0.2825 & 0.2843 & -0.001753 & -0.6169 & 9.28e-05 & 3.114e-06 & 0.0001012 & 228 & n/a (diagnostic) \\
+medium & M4a & Bad-tier weight share & 450 & 0.293 & 0.2979 & -0.004867 & -1.634 & 8.747e-17 & 5.889e-15 & 1.105e-16 & 48 & n/a (diagnostic) \\
+small & M4a & Bad-tier weight share & 450 & 0.2904 & 0.3038 & -0.01332 & -4.387 & 2.4e-61 & 1.902e-49 & 3.388e-61 & 10 & n/a (diagnostic) \\
+large & M4ab & accuracy & 450 & 0.3754 & 0.3745 & 0.0009358 & 0.2499 & 0.7042 & 0.94 & 0.7348 & 2.446e+04 & good trend (n.s.) \\
+medium & M4ab & accuracy & 450 & 0.4066 & 0.4013 & 0.005342 & 1.331 & 0.01581 & 0.002968 & 0.02829 & 602 & GOOD (significant) \\
+small & M4ab & accuracy & 450 & 0.3996 & 0.3971 & 0.002558 & 0.6442 & 0.3774 & 0.09164 & 0.4313 & 4525 & good trend (n.s.) \\
+large & M4ab & client-drift E\_drift & 450 & 0.01288 & 0.02209 & -0.009206 & -41.68 & 6.302e-32 & 9.379e-55 & 1.26e-31 & 22 & GOOD (significant) \\
+medium & M4ab & client-drift E\_drift & 450 & 0.01319 & 0.02203 & -0.008839 & -40.12 & 3.757e-37 & 4.694e-59 & 2.254e-36 & 19 & GOOD (significant) \\
+small & M4ab & client-drift E\_drift & 450 & 0.01225 & 0.02526 & -0.01301 & -51.49 & 1.881e-26 & 1.213e-59 & 2.655e-26 & 28 & GOOD (significant) \\
+large & M4ab & drift alignment S\_CDA & 450 & 0.3121 & 0.2435 & 0.06858 & 28.16 & 1.187e-69 & 4.781e-60 & 2.036e-69 & 8 & GOOD (significant) \\
+medium & M4ab & drift alignment S\_CDA & 450 & 0.3258 & 0.2483 & 0.07746 & 31.2 & 1.064e-76 & 7.186e-68 & 2.321e-76 & 7 & GOOD (significant) \\
+small & M4ab & drift alignment S\_CDA & 450 & 0.351 & 0.2779 & 0.07301 & 26.27 & 2.007e-64 & 3.787e-63 & 2.676e-64 & 9 & GOOD (significant) \\
+large & M4ab & reconstruction error & 450 & 0.07855 & 0.1112 & -0.03263 & -29.35 & 8.745e-60 & 3.669e-70 & 1.614e-59 & 10 & GOOD (significant) \\
+medium & M4ab & reconstruction error & 450 & 0.08095 & 0.1142 & -0.03326 & -29.12 & 4.287e-65 & 2.017e-72 & 1.47e-64 & 9 & GOOD (significant) \\
+small & M4ab & reconstruction error & 450 & 0.08383 & 0.1225 & -0.03865 & -31.56 & 9.206e-51 & 7.443e-72 & 1.227e-50 & 13 & GOOD (significant) \\
+large & M4ab & active clients & 450 & 9.452 & 9.373 & 0.07864 & 0.839 & 7.782e-90 & 1.592e-64 & 3.735e-89 & 6 & GOOD (significant) \\
+medium & M4ab & active clients & 450 & 9.471 & 9.395 & 0.0764 & 0.8132 & 6.426e-92 & 1.739e-64 & 3.856e-91 & 6 & GOOD (significant) \\
+small & M4ab & active clients & 450 & 9.468 & 9.4 & 0.06779 & 0.7212 & 1.857e-70 & 3.032e-55 & 7.427e-70 & 8 & GOOD (significant) \\
+large & M4ab & |g\_hat|/|g*| & 450 & 1.297 & 1.476 & -0.1791 & -12.14 & 4.893e-17 & 1.462e-10 & 4.893e-17 & 47 & n/a (diagnostic) \\
+medium & M4ab & |g\_hat|/|g*| & 450 & 1.253 & 1.424 & -0.1712 & -12.02 & 5.204e-19 & 6.662e-12 & 5.947e-19 & 41 & n/a (diagnostic) \\
+small & M4ab & |g\_hat|/|g*| & 450 & 1.182 & 1.373 & -0.191 & -13.91 & 5.707e-26 & 1.831e-17 & 9.783e-26 & 28 & n/a (diagnostic) \\
+large & M4ab & Bad-tier weight share & 450 & 0.2825 & 0.2587 & 0.02384 & 9.216 & 3.246e-69 & 9.915e-54 & 4.869e-69 & 8 & n/a (diagnostic) \\
+medium & M4ab & Bad-tier weight share & 450 & 0.293 & 0.278 & 0.01506 & 5.42 & 8.415e-45 & 4.897e-38 & 1.122e-44 & 15 & n/a (diagnostic) \\
+small & M4ab & Bad-tier weight share & 450 & 0.2904 & 0.2866 & 0.003835 & 1.338 & 4.004e-14 & 2.486e-05 & 4.805e-14 & 58 & n/a (diagnostic) \\
+large & M5b & accuracy & 450 & 0.3754 & 0.3598 & 0.01562 & 4.34 & 2.812e-13 & 2.002e-12 & 6.748e-12 & 63 & GOOD (significant) \\
+medium & M5b & accuracy & 450 & 0.4066 & 0.3948 & 0.01186 & 3.005 & 2.231e-07 & 3.08e-08 & 1.785e-06 & 128 & GOOD (significant) \\
+small & M5b & accuracy & 450 & 0.3996 & 0.384 & 0.01567 & 4.08 & 7.796e-11 & 3.702e-11 & 9.355e-10 & 80 & GOOD (significant) \\
+large & M5b & client-drift E\_drift & 450 & 0.01288 & 0.0188 & -0.005919 & -31.48 & 2.754e-26 & 4.516e-44 & 3.672e-26 & 28 & GOOD (significant) \\
+medium & M5b & client-drift E\_drift & 450 & 0.01319 & 0.01843 & -0.005234 & -28.41 & 1.094e-23 & 4.513e-42 & 1.193e-23 & 32 & GOOD (significant) \\
+small & M5b & client-drift E\_drift & 450 & 0.01225 & 0.0197 & -0.007448 & -37.81 & 2.204e-33 & 5.149e-56 & 5.29e-33 & 21 & GOOD (significant) \\
+large & M5b & drift alignment S\_CDA & 450 & 0.3121 & 0.3164 & -0.004312 & -1.363 & 0.1023 & 0.004014 & 0.1023 & 1318 & bad trend (n.s.) \\
+medium & M5b & drift alignment S\_CDA & 450 & 0.3258 & 0.3202 & 0.005545 & 1.732 & 0.0212 & 0.2474 & 0.02212 & 661 & GOOD (significant) \\
+small & M5b & drift alignment S\_CDA & 450 & 0.351 & 0.3408 & 0.0102 & 2.995 & 0.000221 & 0.008412 & 0.0002411 & 255 & GOOD (significant) \\
+large & M5b & reconstruction error & 450 & 0.07855 & 0.08611 & -0.007553 & -8.772 & 3.484e-18 & 2.876e-15 & 3.484e-18 & 43 & GOOD (significant) \\
+medium & M5b & reconstruction error & 450 & 0.08095 & 0.08968 & -0.008726 & -9.731 & 2.817e-21 & 3.656e-23 & 2.94e-21 & 36 & GOOD (significant) \\
+small & M5b & reconstruction error & 450 & 0.08383 & 0.09741 & -0.01358 & -13.94 & 9.62e-37 & 2.209e-35 & 1.049e-36 & 19 & GOOD (significant) \\
+large & M5b & active clients & 450 & 9.452 & 4.668 & 4.784 & 102.5 & 0 & 1.851e-75 & 0 & 1 & GOOD (significant) \\
+medium & M5b & active clients & 450 & 9.471 & 4.668 & 4.803 & 102.9 & 0 & 1.852e-75 & 0 & 1 & GOOD (significant) \\
+small & M5b & active clients & 450 & 9.468 & 4.668 & 4.8 & 102.8 & 0 & 1.852e-75 & 0 & 1 & GOOD (significant) \\
+large & M5b & |g\_hat|/|g*| & 450 & 1.297 & 1.07 & 0.2267 & 21.19 & 1.806e-66 & 1.128e-56 & 2.167e-65 & 9 & n/a (diagnostic) \\
+medium & M5b & |g\_hat|/|g*| & 450 & 1.253 & 1.083 & 0.1698 & 15.68 & 8.028e-60 & 1.033e-50 & 4.817e-59 & 10 & n/a (diagnostic) \\
+small & M5b & |g\_hat|/|g*| & 450 & 1.182 & 1.048 & 0.1346 & 12.84 & 5.481e-52 & 1.697e-43 & 2.192e-51 & 12 & n/a (diagnostic) \\
+large & M5b & Bad-tier weight share & 450 & 0.2825 & 0.3403 & -0.0578 & -16.98 & 5.086e-91 & 2.724e-63 & 6.103e-90 & 6 & n/a (diagnostic) \\
+medium & M5b & Bad-tier weight share & 450 & 0.293 & 0.3403 & -0.04729 & -13.9 & 4.948e-93 & 2.268e-67 & 1.187e-91 & 6 & n/a (diagnostic) \\
+small & M5b & Bad-tier weight share & 450 & 0.2904 & 0.3403 & -0.04987 & -14.66 & 1.611e-87 & 1.863e-62 & 1.289e-86 & 6 & n/a (diagnostic) \\
+large & M3 & accuracy & 450 & 0.3754 & 0.3694 & 0.006035 & 1.634 & 0.0165 & 0.01283 & 0.02829 & 610 & GOOD (significant) \\
+medium & M3 & accuracy & 450 & 0.4066 & 0.3999 & 0.006681 & 1.671 & 0.002852 & 0.0009559 & 0.01204 & 393 & GOOD (significant) \\
+small & M3 & accuracy & 450 & 0.3996 & 0.3927 & 0.00698 & 1.778 & 0.01388 & 0.0007111 & 0.02776 & 579 & GOOD (significant) \\
+large & M3 & client-drift E\_drift & 450 & 0.01288 & 0.02051 & -0.007624 & -37.18 & 6.584e-30 & 1.163e-54 & 1.216e-29 & 24 & GOOD (significant) \\
+medium & M3 & client-drift E\_drift & 450 & 0.01319 & 0.02036 & -0.007166 & -35.2 & 1.95e-35 & 1.134e-56 & 7.8e-35 & 20 & GOOD (significant) \\
+small & M3 & client-drift E\_drift & 450 & 0.01225 & 0.02361 & -0.01136 & -48.1 & 2.594e-23 & 1.592e-57 & 2.594e-23 & 32 & GOOD (significant) \\
+large & M3 & drift alignment S\_CDA & 450 & 0.3121 & 0.2412 & 0.07087 & 29.38 & 1.794e-78 & 1.363e-64 & 4.305e-78 & 7 & GOOD (significant) \\
+medium & M3 & drift alignment S\_CDA & 450 & 0.3258 & 0.2508 & 0.07497 & 29.9 & 2.041e-80 & 1.352e-67 & 8.165e-80 & 7 & GOOD (significant) \\
+small & M3 & drift alignment S\_CDA & 450 & 0.351 & 0.2815 & 0.06945 & 24.67 & 3.1e-64 & 7.482e-61 & 3.916e-64 & 9 & GOOD (significant) \\
+large & M3 & reconstruction error & 450 & 0.07855 & 0.108 & -0.02941 & -27.24 & 1.198e-61 & 1.517e-70 & 2.614e-61 & 10 & GOOD (significant) \\
+medium & M3 & reconstruction error & 450 & 0.08095 & 0.1105 & -0.02957 & -26.75 & 4.313e-70 & 1.294e-71 & 3.451e-69 & 8 & GOOD (significant) \\
+small & M3 & reconstruction error & 450 & 0.08383 & 0.1185 & -0.0347 & -29.28 & 6.908e-49 & 2.591e-70 & 8.726e-49 & 13 & GOOD (significant) \\
+large & M3 & active clients & 450 & 9.452 & 9.411 & 0.04118 & 0.4376 & 7.034e-22 & 1.214e-22 & 8.039e-22 & 35 & GOOD (significant) \\
+medium & M3 & active clients & 450 & 9.471 & 9.411 & 0.06018 & 0.6395 & 4.213e-57 & 2.966e-46 & 1.011e-56 & 11 & GOOD (significant) \\
+small & M3 & active clients & 450 & 9.468 & 9.411 & 0.05723 & 0.6082 & 1.825e-47 & 1.333e-40 & 3.129e-47 & 14 & GOOD (significant) \\
+large & M3 & |g\_hat|/|g*| & 450 & 1.297 & 1.501 & -0.2044 & -13.62 & 1.864e-18 & 4.299e-14 & 2.033e-18 & 43 & n/a (diagnostic) \\
+medium & M3 & |g\_hat|/|g*| & 450 & 1.253 & 1.453 & -0.1998 & -13.76 & 2.8e-23 & 8.444e-16 & 4.2e-23 & 32 & n/a (diagnostic) \\
+small & M3 & |g\_hat|/|g*| & 450 & 1.182 & 1.381 & -0.1984 & -14.37 & 4.483e-27 & 2.704e-20 & 8.277e-27 & 27 & n/a (diagnostic) \\
+large & M3 & Bad-tier weight share & 450 & 0.2825 & 0.3347 & -0.0522 & -15.59 & 3.913e-85 & 4.419e-53 & 1.043e-84 & 6 & n/a (diagnostic) \\
+medium & M3 & Bad-tier weight share & 450 & 0.293 & 0.3347 & -0.04169 & -12.46 & 1.253e-86 & 1.879e-58 & 5.012e-86 & 6 & n/a (diagnostic) \\
+small & M3 & Bad-tier weight share & 450 & 0.2904 & 0.3347 & -0.04427 & -13.23 & 6.87e-81 & 1.589e-52 & 1.178e-80 & 7 & n/a (diagnostic) \\
+large & M2 & accuracy & 450 & 0.3754 & 0.3745 & 0.0009642 & 0.2575 & 0.6875 & 0.535 & 0.7348 & 2.18e+04 & good trend (n.s.) \\
+medium & M2 & accuracy & 450 & 0.4066 & 0.3992 & 0.007433 & 1.862 & 0.001162 & 0.0005438 & 0.006973 & 331 & GOOD (significant) \\
+small & M2 & accuracy & 450 & 0.3996 & 0.3963 & 0.003377 & 0.8521 & 0.2186 & 0.004673 & 0.2786 & 2327 & good trend (n.s.) \\
+large & M2 & client-drift E\_drift & 450 & 0.01288 & 0.02025 & -0.007372 & -36.4 & 1.222e-29 & 1.601e-57 & 2.095e-29 & 24 & GOOD (significant) \\
+medium & M2 & client-drift E\_drift & 450 & 0.01319 & 0.02052 & -0.007333 & -35.73 & 2.623e-36 & 1.374e-59 & 1.259e-35 & 19 & GOOD (significant) \\
+small & M2 & client-drift E\_drift & 450 & 0.01225 & 0.02371 & -0.01146 & -48.32 & 1.251e-24 & 6.101e-62 & 1.43e-24 & 30 & GOOD (significant) \\
+large & M2 & drift alignment S\_CDA & 450 & 0.3121 & 0.2477 & 0.06439 & 26 & 1.054e-78 & 2.016e-62 & 3.162e-78 & 7 & GOOD (significant) \\
+medium & M2 & drift alignment S\_CDA & 450 & 0.3258 & 0.2567 & 0.06907 & 26.91 & 3.61e-81 & 1.726e-66 & 1.733e-80 & 7 & GOOD (significant) \\
+small & M2 & drift alignment S\_CDA & 450 & 0.351 & 0.2834 & 0.0676 & 23.86 & 6.055e-71 & 1.256e-62 & 1.118e-70 & 8 & GOOD (significant) \\
+large & M2 & reconstruction error & 450 & 0.07855 & 0.1072 & -0.0286 & -26.69 & 1.316e-63 & 7.689e-72 & 3.51e-63 & 9 & GOOD (significant) \\
+medium & M2 & reconstruction error & 450 & 0.08095 & 0.1107 & -0.02971 & -26.85 & 8.33e-77 & 2.082e-73 & 1.999e-75 & 7 & GOOD (significant) \\
+small & M2 & reconstruction error & 450 & 0.08383 & 0.1186 & -0.03477 & -29.31 & 1.222e-52 & 5.886e-72 & 1.956e-52 & 12 & GOOD (significant) \\
+large & M2 & active clients & 450 & 9.452 & 9.411 & 0.04118 & 0.4376 & 7.034e-22 & 1.214e-22 & 8.039e-22 & 35 & GOOD (significant) \\
+medium & M2 & active clients & 450 & 9.471 & 9.411 & 0.06018 & 0.6395 & 4.213e-57 & 2.966e-46 & 1.011e-56 & 11 & GOOD (significant) \\
+small & M2 & active clients & 450 & 9.468 & 9.411 & 0.05723 & 0.6082 & 1.825e-47 & 1.333e-40 & 3.129e-47 & 14 & GOOD (significant) \\
+large & M2 & |g\_hat|/|g*| & 450 & 1.297 & 1.566 & -0.2696 & -17.21 & 1.648e-30 & 1.991e-31 & 4.396e-30 & 24 & n/a (diagnostic) \\
+medium & M2 & |g\_hat|/|g*| & 450 & 1.253 & 1.513 & -0.2598 & -17.17 & 3.863e-38 & 7.106e-33 & 1.159e-37 & 18 & n/a (diagnostic) \\
+small & M2 & |g\_hat|/|g*| & 450 & 1.182 & 1.427 & -0.2447 & -17.15 & 3.362e-41 & 1.445e-37 & 1.153e-40 & 16 & n/a (diagnostic) \\
+large & M2 & Bad-tier weight share & 450 & 0.2825 & 0.3347 & -0.0522 & -15.59 & 3.913e-85 & 4.419e-53 & 1.043e-84 & 6 & n/a (diagnostic) \\
+medium & M2 & Bad-tier weight share & 450 & 0.293 & 0.3347 & -0.04169 & -12.46 & 1.253e-86 & 1.879e-58 & 5.012e-86 & 6 & n/a (diagnostic) \\
+small & M2 & Bad-tier weight share & 450 & 0.2904 & 0.3347 & -0.04427 & -13.23 & 6.87e-81 & 1.589e-52 & 1.178e-80 & 7 & n/a (diagnostic) \\
+large & CDQ & accuracy & 450 & 0.3754 & 0.3685 & 0.006881 & 1.867 & 0.00301 & 5.572e-05 & 0.01204 & 397 & GOOD (significant) \\
+medium & CDQ & accuracy & 450 & 0.4066 & 0.4025 & 0.004126 & 1.025 & 0.1079 & 0.2377 & 0.1618 & 1362 & good trend (n.s.) \\
+small & CDQ & accuracy & 450 & 0.3996 & 0.3974 & 0.002279 & 0.5735 & 0.3577 & 0.65 & 0.4292 & 4166 & good trend (n.s.) \\
+large & CDQ & client-drift E\_drift & 450 & 0.01288 & 0.02835 & -0.01547 & -54.56 & 3.085e-32 & 4.096e-60 & 6.732e-32 & 22 & GOOD (significant) \\
+medium & CDQ & client-drift E\_drift & 450 & 0.01319 & 0.02972 & -0.01653 & -55.62 & 6.611e-40 & 1.436e-71 & 1.587e-38 & 17 & GOOD (significant) \\
+small & CDQ & client-drift E\_drift & 450 & 0.01225 & 0.03411 & -0.02186 & -64.08 & 8.604e-39 & 1.98e-74 & 1.032e-37 & 18 & GOOD (significant) \\
+large & CDQ & drift alignment S\_CDA & 450 & 0.3121 & 0.2839 & 0.02817 & 9.923 & 5.04e-33 & 1.379e-30 & 5.761e-33 & 21 & GOOD (significant) \\
+medium & CDQ & drift alignment S\_CDA & 450 & 0.3258 & 0.2879 & 0.03787 & 13.16 & 2.639e-57 & 8.567e-48 & 3.167e-57 & 11 & GOOD (significant) \\
+small & CDQ & drift alignment S\_CDA & 450 & 0.351 & 0.2989 & 0.05211 & 17.44 & 1.709e-82 & 9.075e-59 & 1.368e-81 & 7 & GOOD (significant) \\
+large & CDQ & reconstruction error & 450 & 0.07855 & 0.1089 & -0.0303 & -27.84 & 2.33e-48 & 3.2e-59 & 2.663e-48 & 13 & GOOD (significant) \\
+medium & CDQ & reconstruction error & 450 & 0.08095 & 0.1193 & -0.03831 & -32.12 & 1.261e-62 & 2.432e-74 & 3.027e-62 & 10 & GOOD (significant) \\
+small & CDQ & reconstruction error & 450 & 0.08383 & 0.1315 & -0.04766 & -36.25 & 1.239e-63 & 1.02e-74 & 3.51e-63 & 9 & GOOD (significant) \\
+large & CDQ & active clients & 450 & 9.452 & 9.452 & -0.0004506 & -0.004767 & 0.8054 & 0.8726 & 0.8054 & 5.813e+04 & bad trend (n.s.) \\
+medium & CDQ & active clients & 450 & 9.471 & 9.47 & 0.0006296 & 0.006648 & 0.7394 & 0.7538 & 0.7715 & 3.187e+04 & good trend (n.s.) \\
+small & CDQ & active clients & 450 & 9.468 & 9.467 & 0.0005926 & 0.006259 & 0.7244 & 0.711 & 0.7715 & 2.838e+04 & good trend (n.s.) \\
+large & CDQ & |g\_hat|/|g*| & 450 & 1.297 & 1.713 & -0.4166 & -24.32 & 3.11e-55 & 9.672e-63 & 1.493e-54 & 11 & n/a (diagnostic) \\
+medium & CDQ & |g\_hat|/|g*| & 450 & 1.253 & 1.619 & -0.3667 & -22.64 & 1.218e-61 & 6.658e-65 & 9.741e-61 & 10 & n/a (diagnostic) \\
+small & CDQ & |g\_hat|/|g*| & 450 & 1.182 & 1.554 & -0.3722 & -23.94 & 1.819e-72 & 3.891e-73 & 4.365e-71 & 8 & n/a (diagnostic) \\
+large & CDQ & Bad-tier weight share & 450 & 0.2825 & 0.2824 & 0.0001524 & 0.05397 & 0.2769 & 0.2219 & 0.2769 & 2980 & n/a (diagnostic) \\
+medium & CDQ & Bad-tier weight share & 450 & 0.293 & 0.2927 & 0.0002854 & 0.09748 & 0.07224 & 0.1615 & 0.07538 & 1088 & n/a (diagnostic) \\
+small & CDQ & Bad-tier weight share & 450 & 0.2904 & 0.2898 & 0.0006171 & 0.2129 & 2.704e-05 & 0.0001801 & 3.09e-05 & 197 & n/a (diagnostic) \\
+\bottomrule
+\end{tabular}
+\end{table}

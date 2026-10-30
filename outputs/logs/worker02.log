@@ -1,0 +1,40 @@
+[worker 2/4] device=0 backend=torch/cuda threads=1 dynamic pool=13950 already-done=12492 -> shards_paper_torchcuda/shard02.csv
+sweep [w2]: 13950 configs in the pool, 12492 already finished, 1458 to go
+   [w2]: 10 runs written, 832 s elapsed, 83.2 s/run
+   [w2]: 20 runs written, 1692 s elapsed, 84.6 s/run
+   [w2]: 30 runs written, 2545 s elapsed, 84.8 s/run
+   [w2]: 40 runs written, 3377 s elapsed, 84.4 s/run
+   [w2]: 50 runs written, 4193 s elapsed, 83.9 s/run
+   [w2]: 60 runs written, 5046 s elapsed, 84.1 s/run
+   [w2]: 70 runs written, 5208 s elapsed, 74.4 s/run
+   [w2]: 80 runs written, 5299 s elapsed, 66.2 s/run
+   [w2]: 90 runs written, 5390 s elapsed, 59.9 s/run
+   [w2]: 100 runs written, 5481 s elapsed, 54.8 s/run
+   [w2]: 110 runs written, 5573 s elapsed, 50.7 s/run
+   [w2]: 120 runs written, 5665 s elapsed, 47.2 s/run
+   [w2]: 130 runs written, 5756 s elapsed, 44.3 s/run
+   [w2]: 140 runs written, 5848 s elapsed, 41.8 s/run
+   [w2]: 150 runs written, 5940 s elapsed, 39.6 s/run
+   [w2]: 160 runs written, 6031 s elapsed, 37.7 s/run
+   [w2]: 170 runs written, 6141 s elapsed, 36.1 s/run
+   [w2]: 180 runs written, 6255 s elapsed, 34.7 s/run
+   [w2]: 190 runs written, 6370 s elapsed, 33.5 s/run
+   [w2]: 200 runs written, 6485 s elapsed, 32.4 s/run
+   [w2]: 210 runs written, 6600 s elapsed, 31.4 s/run
+   [w2]: 220 runs written, 6715 s elapsed, 30.5 s/run
+   [w2]: 230 runs written, 6829 s elapsed, 29.7 s/run
+   [w2]: 240 runs written, 6944 s elapsed, 28.9 s/run
+   [w2]: 250 runs written, 7058 s elapsed, 28.2 s/run
+   [w2]: 260 runs written, 7173 s elapsed, 27.6 s/run
+   [w2]: 270 runs written, 7734 s elapsed, 28.6 s/run
+   [w2]: 280 runs written, 8595 s elapsed, 30.7 s/run
+   [w2]: 290 runs written, 9426 s elapsed, 32.5 s/run
+   [w2]: 300 runs written, 10268 s elapsed, 34.2 s/run
+   [w2]: 310 runs written, 11103 s elapsed, 35.8 s/run
+   [w2]: 320 runs written, 11951 s elapsed, 37.3 s/run
+   [w2]: 330 runs written, 12786 s elapsed, 38.7 s/run
+   [w2]: 340 runs written, 13627 s elapsed, 40.1 s/run
+   [w2]: 350 runs written, 14457 s elapsed, 41.3 s/run
+   [w2]: 360 runs written, 15276 s elapsed, 42.4 s/run
+sweep [w2] finished: 366 runs in 15788s
+[worker 2] finished: 366 new rows in 15788s
